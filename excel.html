@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Microsoft Excel Portfolio | The Editorial Muse</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;family=Be+Vietnam+Pro:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-italic { font-family: 'Noto Serif', serif; font-style: italic; }
+        .no-line-rule { border: none !important; }
+        .tonal-shift-only { border: none !important; }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#fcf8f9",
+              "error": "#ba1a1a",
+              "on-tertiary-fixed": "#3f001a",
+              "surface-container-low": "#f6f3f4",
+              "on-primary-container": "#790044",
+              "primary-fixed": "#ffd9e4",
+              "outline": "#847378",
+              "on-error-container": "#93000a",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed": "#ffd9e1",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#ffd9e4",
+              "on-surface-variant": "#524347",
+              "tertiary-container": "#ff7ba4",
+              "on-primary": "#ffffff",
+              "secondary-fixed-dim": "#f2b6cb",
+              "on-error": "#ffffff",
+              "tertiary": "#b41b5c",
+              "tertiary-fixed-dim": "#ffb1c5",
+              "secondary-container": "#fec1d6",
+              "on-secondary-fixed-variant": "#65394b",
+              "on-surface": "#1b1b1c",
+              "surface-container-high": "#eae7e8",
+              "error-container": "#ffdad6",
+              "on-primary-fixed": "#3e0020",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed-dim": "#ffb0cc",
+              "on-tertiary-fixed-variant": "#8f0045",
+              "inverse-on-surface": "#f3f0f1",
+              "background": "#fcf8f9",
+              "inverse-primary": "#ffb0cc",
+              "surface-tint": "#a82d68",
+              "surface-dim": "#dcd9da",
+              "surface-container-highest": "#e4e2e3",
+              "on-primary-fixed-variant": "#890f50",
+              "surface-variant": "#e4e2e3",
+              "on-secondary-container": "#7b4c5e",
+              "surface-container": "#f0edee",
+              "surface": "#fcf8f9",
+              "on-secondary-fixed": "#330f1f",
+              "outline-variant": "#d6c1c7",
+              "on-tertiary-container": "#7a003a",
+              "on-background": "#1b1b1c",
+              "primary-container": "#ff79b1",
+              "secondary": "#805062",
+              "primary": "#a82d68",
+              "inverse-surface": "#303031"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-[0_10px_40px_rgba(168,45,104,0.06)] no-line-rule tonal-shift-only">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<div class="text-2xl font-serif italic text-rose-800">The Editorial Muse</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-10 font-['Noto_Serif'] font-light tracking-tight">
+<a class="text-zinc-600 hover:text-rose-500 transition-colors duration-300" href="#">Home</a>
+<a class="text-zinc-600 hover:text-rose-500 transition-colors duration-300" href="#">About</a>
+<a class="text-rose-700 border-b-2 border-rose-700 pb-1" href="#">All Work</a>
+<a class="text-zinc-600 hover:text-rose-500 transition-colors duration-300" href="#">Resume</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-3 rounded-full font-label text-sm tracking-widest uppercase hover:opacity-80 transition-all duration-300 ease-out scale-95 md:scale-100">
+                Contact
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Breadcrumbs & Header -->
+<header class="mb-20 space-y-6">
+<nav class="flex items-center gap-2 font-label text-xs tracking-widest uppercase text-on-surface-variant/60">
+<a class="hover:text-primary transition-colors" href="#">Portfolio</a>
+<span class="material-symbols-outlined text-[10px]">chevron_right</span>
+<span class="text-primary font-bold">Microsoft Excel</span>
+</nav>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-2xl">
+<h1 class="font-headline text-5xl md:text-7xl text-on-surface leading-tight font-light tracking-tighter">
+                        Data <span class="serif-italic text-primary">Architecture</span>
+</h1>
+<p class="mt-6 text-on-surface-variant font-body text-lg leading-relaxed max-w-xl">
+                        Where technical precision meets editorial clarity. A curated collection of complex modeling, dynamic dashboards, and automated workflows.
+                    </p>
+</div>
+<div class="hidden md:block pb-2">
+<span class="font-label text-xs tracking-[0.2em] uppercase text-outline">Section 04 / Excel Systems</span>
+</div>
+</div>
+</header>
+<!-- Bento Grid Project Folders -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<!-- Folder 1: Strategic Forecasting -->
+<div class="group cursor-pointer">
+<div class="relative bg-surface-container-lowest p-8 rounded-lg shadow-[0_10px_40px_rgba(168,45,104,0.04)] transition-all duration-500 ease-out group-hover:-translate-y-2 group-hover:shadow-[0_20px_60px_rgba(168,45,104,0.08)]">
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-100 transition-opacity duration-500">
+<span class="material-symbols-outlined text-primary text-4xl">folder_open</span>
+</div>
+<div class="w-16 h-16 rounded-xl bg-primary-fixed-dim/20 flex items-center justify-center mb-10">
+<span class="material-symbols-outlined text-primary text-3xl">insights</span>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-3 group-hover:text-primary transition-colors">Strategic Forecasting</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">Multi-variable revenue projections for a European fashion house, featuring dynamic scenario modeling.</p>
+</div>
+</div>
+<!-- Folder 2: Inventory Automata -->
+<div class="group cursor-pointer">
+<div class="relative bg-surface-container-low p-8 rounded-lg shadow-[0_10px_40px_rgba(168,45,104,0.04)] transition-all duration-500 ease-out group-hover:-translate-y-2">
+<div class="w-16 h-16 rounded-xl bg-primary-fixed-dim/20 flex items-center justify-center mb-10">
+<span class="material-symbols-outlined text-primary text-3xl">inventory_2</span>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-3 group-hover:text-primary transition-colors">Inventory Automata</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">VBA-driven stock management system for a boutique retailer, reducing reconciliation time by 40%.</p>
+</div>
+</div>
+<!-- Folder 3: Portfolio Analytics -->
+<div class="group cursor-pointer">
+<div class="relative bg-surface-container-lowest p-8 rounded-lg shadow-[0_10px_40px_rgba(168,45,104,0.04)] transition-all duration-500 ease-out group-hover:-translate-y-2">
+<div class="w-16 h-16 rounded-xl bg-primary-fixed-dim/20 flex items-center justify-center mb-10">
+<span class="material-symbols-outlined text-primary text-3xl">donut_small</span>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-3 group-hover:text-primary transition-colors">Portfolio Analytics</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">High-end visual dashboard for private equity asset tracking with real-time API integrations.</p>
+</div>
+</div>
+<!-- Folder 4: Fiscal Reporting -->
+<div class="group cursor-pointer">
+<div class="relative bg-surface-container-low p-8 rounded-lg shadow-[0_10px_40px_rgba(168,45,104,0.04)] transition-all duration-500 ease-out group-hover:-translate-y-2">
+<div class="w-16 h-16 rounded-xl bg-primary-fixed-dim/20 flex items-center justify-center mb-10">
+<span class="material-symbols-outlined text-primary text-3xl">request_quote</span>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-3 group-hover:text-primary transition-colors">Fiscal Reporting</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">Automated monthly financial statements with integrated pivot-table audit trails and error-checks.</p>
+</div>
+</div>
+<!-- Folder 5: Supply Chain Hub -->
+<div class="group cursor-pointer lg:col-span-2">
+<div class="relative bg-primary-fixed/30 p-8 rounded-lg shadow-[0_10px_40px_rgba(168,45,104,0.04)] transition-all duration-500 ease-out group-hover:shadow-[0_20px_60px_rgba(168,45,104,0.1)] flex flex-col md:flex-row md:items-center gap-8">
+<div class="w-24 h-24 flex-shrink-0 rounded-full bg-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary text-5xl">local_shipping</span>
+</div>
+<div>
+<h3 class="font-headline text-3xl text-on-surface mb-4 group-hover:text-primary transition-colors">Global Supply Chain Hub</h3>
+<p class="font-body text-on-surface-variant text-base leading-relaxed max-w-lg">A massive interconnected workbook managing logistics across 12 countries. Complex Power Query implementations and predictive delay modelling.</p>
+<div class="mt-6 flex gap-3">
+<span class="px-4 py-1 rounded-full bg-white text-[10px] font-label uppercase tracking-widest text-primary border border-primary/10">Power Query</span>
+<span class="px-4 py-1 rounded-full bg-white text-[10px] font-label uppercase tracking-widest text-primary border border-primary/10">VBA</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Folder 6: Marketing ROI -->
+<div class="group cursor-pointer">
+<div class="relative bg-surface-container-lowest p-8 rounded-lg shadow-[0_10px_40px_rgba(168,45,104,0.04)] transition-all duration-500 ease-out group-hover:-translate-y-2">
+<div class="w-16 h-16 rounded-xl bg-primary-fixed-dim/20 flex items-center justify-center mb-10">
+<span class="material-symbols-outlined text-primary text-3xl">ads_click</span>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-3 group-hover:text-primary transition-colors">Marketing ROI</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">Attribution modeling tool designed for digital agencies to track cross-channel spend efficiency.</p>
+</div>
+</div>
+<!-- Folder 7: HR Capacity Planning -->
+<div class="group cursor-pointer">
+<div class="relative bg-surface-container-low p-8 rounded-lg shadow-[0_10px_40px_rgba(168,45,104,0.04)] transition-all duration-500 ease-out group-hover:-translate-y-2">
+<div class="w-16 h-16 rounded-xl bg-primary-fixed-dim/20 flex items-center justify-center mb-10">
+<span class="material-symbols-outlined text-primary text-3xl">groups</span>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-3 group-hover:text-primary transition-colors">Capacity Planning</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">Workforce optimization model using Solver parameters to maximize project throughput.</p>
+</div>
+</div>
+<!-- Folder 8: Real Estate Ledger -->
+<div class="group cursor-pointer">
+<div class="relative bg-surface-container-lowest p-8 rounded-lg shadow-[0_10px_40px_rgba(168,45,104,0.04)] transition-all duration-500 ease-out group-hover:-translate-y-2">
+<div class="w-16 h-16 rounded-xl bg-primary-fixed-dim/20 flex items-center justify-center mb-10">
+<span class="material-symbols-outlined text-primary text-3xl">domain</span>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-3 group-hover:text-primary transition-colors">Real Estate Ledger</h3>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">Dynamic cap rate calculator and amortization engine for commercial property management.</p>
+</div>
+</div>
+</div>
+<!-- Call to Action / Quote -->
+<section class="mt-32">
+<div class="bg-primary-fixed-dim/20 rounded-full py-20 px-12 text-center max-w-4xl mx-auto">
+<blockquote class="font-headline text-3xl md:text-4xl text-on-primary-fixed-variant leading-snug">
+                    "Complexity made <span class="serif-italic">effortless</span>. Precision made <span class="serif-italic">beautiful</span>."
+                </blockquote>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-8 tonal-shift bg-zinc-50">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+<div class="text-lg font-serif text-rose-900 italic">Editorial Muse.</div>
+<div class="flex gap-8 font-['Be_Vietnam_Pro'] text-sm tracking-widest uppercase">
+<a class="text-zinc-500 hover:text-rose-600 transition-colors" href="#">LinkedIn</a>
+<a class="text-zinc-500 hover:text-rose-600 transition-colors" href="#">Instagram</a>
+<a class="text-zinc-500 hover:text-rose-600 transition-colors" href="#">Dribbble</a>
+<a class="text-zinc-500 hover:text-rose-600 transition-colors" href="#">Email</a>
+</div>
+<p class="text-zinc-500 font-['Be_Vietnam_Pro'] text-xs tracking-widest uppercase">
+                © 2024 Editorial Muse. All rights reserved.
+            </p>
+</div>
+</footer>
+<!-- Fixed Decorative Element -->
+<div class="fixed bottom-10 right-10 z-40 hidden lg:block">
+<div class="w-12 h-12 rounded-full bg-white shadow-[0_10px_40px_rgba(168,45,104,0.06)] flex items-center justify-center text-primary hover:scale-110 transition-transform cursor-pointer">
+<span class="material-symbols-outlined">expand_less</span>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>EPICOR ERP | Nabila Amanda</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;0,800;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { "primary": "#a82d68", "surface": "#fcf8f9" },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; scroll-behavior: smooth; }
+        .font-serif-heading { font-family: 'Noto Serif', serif; }
+        
+        .project-frame {
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .project-frame:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 40px 80px -15px rgba(168, 45, 104, 0.2);
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-[#1b1b1c]">
+
+    <header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-between items-center px-8 md:px-12 py-4 border-b border-rose-100/20">
+        <div class="font-serif italic text-xl text-rose-900 font-bold">Portfolio</div>
+        <nav class="hidden md:flex gap-10 uppercase tracking-widest text-[10px] text-zinc-500 font-bold">
+            <a href="index.html" class="hover:text-primary transition-colors">HOME</a>
+            <a href="all-work.html" class="text-primary border-b-2 border-primary pb-1">ALL WORK</a>
+            <a href="about.html" class="hover:text-primary transition-colors">ABOUT</a>
+            <a href="resume.html" class="hover:text-primary transition-colors">RESUME</a>
+        </nav>
+        <a href="contact.html" class="bg-primary text-white px-6 py-2 rounded-full uppercase tracking-widest text-[10px] font-bold">CONTACT</a>
+    </header>
+
+    <main>
+        <section class="pt-32 pb-10 px-8 md:px-12 bg-gradient-to-br from-[#f0f4ff] via-[#f8f0ff] to-[#fff0f6]">
+            <div class="max-w-7xl mx-auto">
+                <nav class="flex items-center gap-2 mb-4 uppercase tracking-[0.2em] text-[9px] font-bold text-zinc-400">
+                    <a href="all-work.html" class="hover:text-primary transition-colors">All Work</a>
+                    <span class="material-symbols-outlined text-[12px]">chevron_right</span>
+                    <span class="text-primary">EPICOR ERP</span>
+                </nav>
+
+                <h1 class="font-serif-heading text-5xl md:text-7xl font-extrabold leading-tight text-rose-950 mt-2">
+                    Business<br><span class="italic text-primary">Process.</span>
+                </h1>
+                <p class="text-base text-zinc-600 max-w-xl mt-4 leading-relaxed font-light">
+                    Pengelolaan alur kerja operasional menggunakan sistem <b>EPICOR ERP</b> untuk optimasi manajemen data perusahaan.
+                </p>
+            </div>
+        </section>
+
+        <section class="px-8 md:px-12 py-16 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <a href="link project/Epicor_Procurement.pdf" target="_blank" class="group block">
+                    <div class="project-frame relative aspect-video overflow-hidden rounded-[2rem] bg-white shadow-xl border-[8px] border-white ring-1 ring-rose-100/50">
+                        <img src="img/procurement-thumb.png" alt="Procurement" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-rose-950/80 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center p-6 transition-opacity duration-500">
+                            <p class="text-white/60 text-[9px] uppercase tracking-[0.4em] mb-2 font-bold">Epicor Operations</p>
+                            <h3 class="font-serif-heading text-lg text-white font-bold italic">Open in PDF</h3>
+                            <div class="mt-3 w-8 h-8 border border-white/20 rounded-full flex items-center justify-center text-white">↗</div>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex items-start gap-3 px-2">
+                        <div class="w-9 h-9 bg-rose-50 rounded-xl flex items-center justify-center text-primary flex-shrink-0">
+                            <span class="material-symbols-outlined text-xl">shopping_cart_checkout</span>
+                        </div>
+                        <div>
+                            <h3 class="font-serif-heading text-xl font-bold text-rose-950 group-hover:text-primary transition-colors">Procurement</h3>
+                            <p class="text-zinc-500 text-[13px] leading-snug">Purchasing management and PO processing system.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="link project/Production Process in Epicor.pdf" target="_blank" class="group block">
+                    <div class="project-frame relative aspect-video overflow-hidden rounded-[2rem] bg-white shadow-xl border-[8px] border-white ring-1 ring-rose-100/50">
+                        <img src="img/Production.png" alt="Production" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-rose-950/80 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center p-6 transition-opacity duration-500">
+                            <p class="text-white/60 text-[9px] uppercase tracking-[0.4em] mb-2 font-bold">Epicor Operations</p>
+                            <h3 class="font-serif-heading text-lg text-white font-bold italic">Open in PDF</h3>
+                            <div class="mt-3 w-8 h-8 border border-white/20 rounded-full flex items-center justify-center text-white">↗</div>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex items-start gap-3 px-2">
+                        <div class="w-9 h-9 bg-rose-50 rounded-xl flex items-center justify-center text-primary flex-shrink-0">
+                            <span class="material-symbols-outlined text-xl">precision_manufacturing</span>
+                        </div>
+                        <div>
+                            <h3 class="font-serif-heading text-xl font-bold text-rose-950 group-hover:text-primary transition-colors">Production</h3>
+                            <p class="text-zinc-500 text-[13px] leading-snug">Manufacturing flow and resource monitoring tools.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="link project/Sales Order Process in Epicor.pdf" target="_blank" class="group block">
+                    <div class="project-frame relative aspect-video overflow-hidden rounded-[2rem] bg-white shadow-xl border-[8px] border-white ring-1 ring-rose-100/50">
+                        <img src="img/SO.png" alt="Sales Order" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-rose-950/80 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center p-6 transition-opacity duration-500">
+                            <p class="text-white/60 text-[9px] uppercase tracking-[0.4em] mb-2 font-bold">Epicor Operations</p>
+                            <h3 class="font-serif-heading text-lg text-white font-bold italic">Open in PDF</h3>
+                            <div class="mt-3 w-8 h-8 border border-white/20 rounded-full flex items-center justify-center text-white">↗</div>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex items-start gap-3 px-2">
+                        <div class="w-9 h-9 bg-rose-50 rounded-xl flex items-center justify-center text-primary flex-shrink-0">
+                            <span class="material-symbols-outlined text-xl">receipt_long</span>
+                        </div>
+                        <div>
+                            <h3 class="font-serif-heading text-xl font-bold text-rose-950 group-hover:text-primary transition-colors">Sales Order</h3>
+                            <p class="text-zinc-500 text-[13px] leading-snug">Order management and fulfillment workflow.</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full py-12 px-8 bg-[#fff0f3] border-t border-rose-100 mt-12">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 text-center md:text-left">
+            <div class="font-serif italic text-2xl text-rose-900 font-bold">Contact Me</div>
+            
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-6">
+                <a href="mailto:nabilaamanda3306@gmail.com" class="flex items-center gap-3 group">
+                    <span class="material-symbols-outlined text-primary text-2xl">mail</span>
+                    <div class="text-left hidden sm:block">
+                        <p class="text-[9px] font-black text-zinc-400 uppercase leading-none mb-1">Email</p>
+                        <p class="text-[12px] font-bold text-rose-950 group-hover:text-primary transition-colors">nabilaamanda3306@gmail.com</p>
+                    </div>
+                </a>
+                <a href="https://wa.me/6285880810406" target="_blank" class="flex items-center gap-3 group">
+                    <span class="material-symbols-outlined text-primary text-2xl">chat</span>
+                    <div class="text-left hidden sm:block">
+                        <p class="text-[9px] font-black text-zinc-400 uppercase leading-none mb-1">WhatsApp</p>
+                        <p class="text-[12px] font-bold text-rose-950 group-hover:text-primary transition-colors">+62 858 8081 0406</p>
+                    </div>
+                </a>
+                <a href="https://linkedin.com/in/nabilaamanda" target="_blank" class="flex items-center gap-3 group">
+                    <span class="material-symbols-outlined text-primary text-2xl">work</span>
+                    <div class="text-left hidden sm:block">
+                        <p class="text-[9px] font-black text-zinc-400 uppercase leading-none mb-1">LinkedIn</p>
+                        <p class="text-[12px] font-bold text-rose-950 group-hover:text-primary transition-colors">Nabila Amanda</p>
+                    </div>
+                </a>
+                <a href="https://instagram.com/mandazee_" target="_blank" class="flex items-center gap-3 group">
+                    <span class="material-symbols-outlined text-primary text-2xl">photo_camera</span>
+                    <div class="text-left hidden sm:block">
+                        <p class="text-[9px] font-black text-zinc-400 uppercase leading-none mb-1">Instagram</p>
+                        <p class="text-[12px] font-bold text-rose-950 group-hover:text-primary transition-colors">@mandazee_</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="text-[10px] text-zinc-400 font-bold tracking-[0.3em] uppercase">© 2026 NABILA AMANDA.</div>
+        </div>
+    </footer>
+
+</body>
+</html>

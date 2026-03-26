@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Contact | Nabila Amanda</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;0,800;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { "primary": "#a82d68", "surface": "#fcf8f9" },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; scroll-behavior: smooth; }
+        .font-serif-heading { font-family: 'Noto Serif', serif; }
+        
+        .contact-card {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .contact-card:hover {
+            transform: translateX(10px);
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-[#1b1b1c]">
+
+    <header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-between items-center px-8 md:px-12 py-4 border-b border-rose-100/10">
+        <div class="font-serif italic text-xl text-rose-900 font-bold">Portfolio</div>
+        <nav class="hidden md:flex gap-10 uppercase tracking-widest text-[10px] text-zinc-500 font-bold">
+            <a href="index.html" class="hover:text-primary transition-colors">HOME</a>
+            <a href="all-work.html" class="hover:text-primary transition-colors">ALL WORK</a>
+            <a href="about.html" class="hover:text-primary transition-colors">ABOUT</a>
+            <a href="resume.html" class="hover:text-primary transition-colors">RESUME</a>
+        </nav>
+        <a href="contact.html" class="bg-primary text-white px-6 py-2 rounded-full uppercase tracking-widest text-[10px] font-bold hover:opacity-90 transition-opacity">CONTACT</a>
+    </header>
+
+    <main class="pt-32 pb-24 px-8 md:px-12 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            
+            <div class="lg:sticky lg:top-32">
+                <span class="uppercase tracking-widest text-[11px] text-primary font-bold mb-4 block">Get in Touch</span>
+                <h1 class="font-serif-heading text-5xl md:text-7xl font-bold leading-tight text-rose-950">
+                    Let's<br><span class="italic text-primary font-black">Connect.</span>
+                </h1>
+                <p class="text-base text-zinc-500 mt-8 max-w-md leading-relaxed font-light">
+                    Punya ide project menarik atau sekadar ingin menyapa? Saya sangat terbuka untuk diskusi kreatif mengenai digital sistem maupun narasi brand.
+                </p>
+
+                <div class="mt-12 space-y-4">
+                    <a href="mailto:nabilaamanda3306@gmail.com" class="contact-card flex items-center gap-5 group">
+                        <div class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all border border-rose-50">
+                            <span class="material-symbols-outlined text-sm">mail</span>
+                        </div>
+                        <div>
+                            <p class="text-[9px] font-black text-zinc-400 uppercase tracking-widest">Email Me</p>
+                            <p class="text-sm font-bold text-rose-950 group-hover:text-primary transition-colors">nabilaamanda3306@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/6285880810406" target="_blank" class="contact-card flex items-center gap-5 group">
+                        <div class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all border border-rose-50">
+                            <span class="material-symbols-outlined text-sm">chat</span>
+                        </div>
+                        <div>
+                            <p class="text-[9px] font-black text-zinc-400 uppercase tracking-widest">WhatsApp</p>
+                            <p class="text-sm font-bold text-rose-950 group-hover:text-primary transition-colors">+62 858 8081 0406</p>
+                        </div>
+                    </a>
+
+                    <a href="https://linkedin.com/in/nabilaamanda" target="_blank" class="contact-card flex items-center gap-5 group">
+                        <div class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all border border-rose-50">
+                            <span class="material-symbols-outlined text-sm">work</span>
+                        </div>
+                        <div>
+                            <p class="text-[9px] font-black text-zinc-400 uppercase tracking-widest">LinkedIn</p>
+                            <p class="text-sm font-bold text-rose-950 group-hover:text-primary transition-colors">Nabila Amanda</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 md:p-12 rounded-[3rem] shadow-xl shadow-rose-100/30 border border-rose-50">
+                <form action="https://formspree.io/f/xqegkkvp" method="POST" class="space-y-6">
+                    <div>
+                        <label class="text-[10px] font-black text-primary uppercase tracking-widest">Full Name</label>
+                        <input type="text" name="name" required placeholder="Who are you?" class="w-full bg-transparent border-b border-rose-100 py-3 outline-none focus:border-primary transition-colors italic text-sm">
+                    </div>
+                    <div>
+                        <label class="text-[10px] font-black text-primary uppercase tracking-widest">Email Address</label>
+                        <input type="email" name="email" required placeholder="Where can I reach you?" class="w-full bg-transparent border-b border-rose-100 py-3 outline-none focus:border-primary transition-colors italic text-sm">
+                    </div>
+                    <div>
+                        <label class="text-[10px] font-black text-primary uppercase tracking-widest">Your Message</label>
+                        <textarea name="message" rows="4" required placeholder="Tell me about your project..." class="w-full bg-transparent border-b border-rose-100 py-3 outline-none focus:border-primary transition-colors italic text-sm resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-rose-950 text-white py-4 rounded-2xl uppercase tracking-[0.3em] text-[10px] font-bold hover:bg-primary transition-all duration-500 shadow-lg shadow-rose-900/10">
+                        Send Message ↗
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="no-print w-full py-12 px-8 bg-[#fff0f3] border-t border-rose-100 mt-8 text-center md:text-left">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+        
+        <div class="font-serif italic text-2xl text-rose-900 font-bold">
+            Contact Me
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-x-8 gap-y-6">
+            <a href="mailto:nabilaamanda3306@gmail.com" class="flex items-center gap-3 group">
+                <span class="material-symbols-outlined text-primary text-2xl">mail</span>
+                <div class="text-left hidden sm:block">
+                    <p class="text-[9px] font-black text-zinc-400 uppercase leading-none mb-1">Email</p>
+                    <p class="text-[12px] font-bold text-rose-950 group-hover:text-primary transition-colors">nabilaamanda3306@gmail.com</p>
+                </div>
+            </a>
+
+            <a href="https://wa.me/6285880810406" target="_blank" class="flex items-center gap-3 group">
+                <span class="material-symbols-outlined text-primary text-2xl">chat</span>
+                <div class="text-left hidden sm:block">
+                    <p class="text-[9px] font-black text-zinc-400 uppercase leading-none mb-1">WhatsApp</p>
+                    <p class="text-[12px] font-bold text-rose-950 group-hover:text-primary transition-colors">+62 858 8081 0406</p>
+                </div>
+            </a>
+
+            <a href="https://linkedin.com/in/nabilaamanda" target="_blank" class="flex items-center gap-3 group">
+                <span class="material-symbols-outlined text-primary text-2xl">work</span>
+                <div class="text-left hidden sm:block">
+                    <p class="text-[9px] font-black text-zinc-400 uppercase leading-none mb-1">LinkedIn</p>
+                    <p class="text-[12px] font-bold text-rose-950 group-hover:text-primary transition-colors">Nabila Amanda</p>
+                </div>
+            </a>
+
+            <a href="https://instagram.com/mandazee_" target="_blank" class="flex items-center gap-3 group">
+                <span class="material-symbols-outlined text-primary text-2xl">photo_camera</span>
+                <div class="text-left hidden sm:block">
+                    <p class="text-[9px] font-black text-zinc-400 uppercase leading-none mb-1">Instagram</p>
+                    <p class="text-[12px] font-bold text-rose-950 group-hover:text-primary transition-colors">@mandazee_</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="text-[10px] text-zinc-400 font-bold tracking-[0.3em] uppercase">
+            © 2026 NABILA AMANDA.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

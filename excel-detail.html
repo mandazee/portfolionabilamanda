@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Microsoft Excel | Nabila Amanda</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;0,800;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#a82d68",
+                        "surface": "#fcf8f9",
+                    },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; scroll-behavior: smooth; }
+        .font-serif-heading { font-family: 'Noto Serif', serif; }
+        
+        .project-frame {
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .project-frame:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 40px 80px -15px rgba(168, 45, 104, 0.2);
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-[#1b1b1c]">
+
+    <header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-between items-center px-8 md:px-12 py-6 border-b border-rose-100/20">
+        <div class="font-serif italic text-2xl text-rose-900 font-bold">Portfolio</div>
+        <nav class="hidden md:flex gap-10 uppercase tracking-widest text-[11px] text-zinc-500 font-bold">
+            <a href="index.html" class="hover:text-primary transition-colors">HOME</a>
+            <a href="all-work.html" class="text-primary border-b-2 border-primary pb-1">ALL WORK</a>
+            <a href="about.html" class="hover:text-primary transition-colors">ABOUT</a>
+            <a href="resume.html" class="hover:text-primary transition-colors">RESUME</a>
+        </nav>
+        <a href="mailto:nabilaamanda3306@gmail.com" class="bg-primary text-white px-6 py-2 rounded-full uppercase tracking-widest text-[11px] font-bold hover:opacity-90">CONTACT</a>
+    </header>
+
+    <main>
+        <section class="pt-48 pb-16 px-8 md:px-12 bg-gradient-to-br from-[#f0f9ff] via-[#f8f0ff] to-[#fff0f6]">
+            <div class="max-w-7xl mx-auto">
+                <nav class="flex items-center gap-2 mb-8 uppercase tracking-[0.2em] text-[10px] font-bold text-zinc-400">
+                    <a href="all-work.html" class="hover:text-primary transition-colors">All Work</a>
+                    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+                    <span class="text-primary">Microsoft Excel</span>
+                </nav>
+
+                <h1 class="font-serif-heading text-6xl md:text-8xl font-bold leading-tight text-rose-950 mt-4">
+                    Data<br><span class="italic text-primary font-black">Processing.</span>
+                </h1>
+                <p class="text-lg text-zinc-500 max-w-xl mt-8 leading-relaxed font-light">
+                    Transforming raw data into actionable insights through <b>Excel</b> formulas, data visualization, and automated reporting.
+                </p>
+            </div>
+        </section>
+
+        <section class="px-8 md:px-12 py-24 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                
+                <a href="link project/Microsoft Excel Basic.xlsx" target="_blank" class="group block">
+                    <div class="project-frame relative aspect-video overflow-hidden rounded-[2.5rem] bg-white shadow-xl border-[10px] border-white ring-1 ring-rose-100/50">
+                        <img src="img/Excel-1.png" alt="Excel Basic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-rose-950/80 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center p-6 transition-opacity duration-500">
+                            <p class="text-white/60 text-[10px] uppercase tracking-[0.4em] mb-2 font-bold">Level 01</p>
+                            <h3 class="font-serif-heading text-xl text-white font-bold italic">Open in XLSX</h3>
+                            <div class="mt-4 w-10 h-10 border border-white/20 rounded-full flex items-center justify-center text-white">↗</div>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex items-start gap-4 px-2">
+                        <div class="w-10 h-10 bg-rose-50 rounded-xl flex items-center justify-center text-primary flex-shrink-0">
+                            <span class="material-symbols-outlined text-[20px]">bar_chart</span>
+                        </div>
+                        <div>
+                            <h3 class="font-serif-heading text-2xl font-bold text-rose-950 group-hover:text-primary transition-colors">Basic</h3>
+                            <p class="text-zinc-500 text-sm mt-1 leading-relaxed">Fundamental formulas, data entry, and basic formatting.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="group block opacity-70">
+                    <div class="project-frame relative aspect-video overflow-hidden rounded-[2.5rem] bg-zinc-100 shadow-xl border-[10px] border-white ring-1 ring-zinc-200">
+                        <div class="absolute inset-0 bg-zinc-900/40 flex flex-col justify-center items-center text-center p-6">
+                            <h3 class="font-serif-heading text-xl text-white font-bold italic">Coming Soon</h3>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex items-start gap-4 px-2">
+                        <div class="w-10 h-10 bg-zinc-100 rounded-xl flex items-center justify-center text-zinc-400 flex-shrink-0">
+                            <span class="material-symbols-outlined text-[20px]">query_stats</span>
+                        </div>
+                        <div>
+                            <h3 class="font-serif-heading text-2xl font-bold text-zinc-400">Intermediate</h3>
+                            <p class="text-zinc-400 text-sm mt-1 leading-relaxed">Advanced lookup and logical functions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group block opacity-70">
+                    <div class="project-frame relative aspect-video overflow-hidden rounded-[2.5rem] bg-zinc-100 shadow-xl border-[10px] border-white ring-1 ring-zinc-200">
+                        <div class="absolute inset-0 bg-zinc-900/40 flex flex-col justify-center items-center text-center p-6">
+                            <h3 class="font-serif-heading text-xl text-white font-bold italic">Coming Soon</h3>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex items-start gap-4 px-2">
+                        <div class="w-10 h-10 bg-zinc-100 rounded-xl flex items-center justify-center text-zinc-400 flex-shrink-0">
+                            <span class="material-symbols-outlined text-[20px]">insights</span>
+                        </div>
+                        <div>
+                            <h3 class="font-serif-heading text-2xl font-bold text-zinc-400">Advanced</h3>
+                            <p class="text-zinc-400 text-sm mt-1 leading-relaxed">Dynamic dashboards and data modeling.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full py-16 px-8 bg-[#fff0f3] flex flex-col md:flex-row justify-between items-center gap-8 border-t border-rose-100 mt-32">
+        <div class="font-serif italic text-2xl text-rose-900 font-bold">The Editorial Muse</div>
+        <div class="text-[10px] text-zinc-400 font-medium tracking-widest uppercase">© 2026 NABILA AMANDA. BASED IN CIKARANG.</div>
+        <div class="flex gap-8 text-[11px] font-bold text-zinc-500 uppercase tracking-widest">
+            <a href="https://linkedin.com/in/nabilaamanda8" target="_blank" class="hover:text-primary transition-colors">LinkedIn</a>
+            <a href="mailto:nabilaamanda3306@gmail.com" class="hover:text-primary transition-colors">Email</a>
+        </div>
+    </footer>
+
+</body>
+</html>

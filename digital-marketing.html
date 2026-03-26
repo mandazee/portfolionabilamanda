@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Digital Marketing | Nabila Amanda</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;0,800;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#a82d68",
+                        "surface": "#fcf8f9",
+                        "finish-blue": "#2d5aa8",
+                    },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; scroll-behavior: smooth; }
+        .font-serif-heading { font-family: 'Noto Serif', serif; }
+        .file-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .file-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(168, 45, 104, 0.08); }
+    </style>
+</head>
+
+<body class="bg-surface text-[#1b1b1c]">
+
+    <header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-between items-center px-8 md:px-12 py-6 border-b border-rose-100/20">
+        <div class="font-serif italic text-2xl text-rose-900 font-bold">Portfolio</div>
+        <nav class="hidden md:flex gap-10 uppercase tracking-widest text-[11px] text-zinc-500 font-bold">
+            <a href="index.html" class="hover:text-primary transition-colors">HOME</a>
+            <a href="all-work.html" class="text-primary border-b-2 border-primary pb-1">ALL WORK</a>
+            <a href="#" class="hover:text-primary transition-colors">ABOUT</a>
+            <a href="#" class="hover:text-primary transition-colors">RESUME</a>
+        </nav>
+        <button class="bg-primary text-white px-6 py-2 rounded-full uppercase tracking-widest text-[11px] font-bold">CONTACT</button>
+    </header>
+
+    <main>
+        <section class="pt-48 pb-16 px-8 md:px-12 bg-gradient-to-br from-[#fff0f6] via-[#f8f0ff] to-[#f0f4ff]">
+            <div class="max-w-7xl mx-auto">
+                <nav class="flex items-center gap-2 mb-8 uppercase tracking-[0.2em] text-[10px] font-bold text-zinc-400">
+                    <a href="all-work.html" class="hover:text-primary transition-colors">All Work</a>
+                    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+                    <span class="text-primary">Digital Marketing</span>
+                </nav>
+                <h1 class="font-serif-heading text-6xl md:text-8xl font-extrabold leading-tight text-rose-950 mt-4">
+                    Digital<br><span class="italic text-primary">Marketing.</span>
+                </h1>
+                <p class="text-lg text-zinc-600 max-w-xl mt-8 leading-relaxed">
+                    Strategi terintegrasi untuk pertumbuhan brand, mulai dari manajemen pasar hingga optimasi teknis di berbagai platform digital.
+                </p>
+            </div>
+        </section>
+
+        <section class="px-8 md:px-12 py-24 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                
+                <a href="marketing-management.html" class="file-card bg-white border border-zinc-100 rounded-2xl p-8 relative overflow-hidden group block">
+                    <div class="flex justify-between items-start mb-12">
+                        <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-finish-blue">
+                            <span class="material-symbols-outlined text-3xl">query_stats</span>
+                        </div>
+                        <span class="text-[10px] font-bold text-finish-blue bg-blue-50 px-3 py-1 rounded-full uppercase tracking-widest">Finished</span>
+                    </div>
+                    <h3 class="font-serif-heading text-2xl text-rose-950 mb-2 font-bold">Marketing Management</h3>
+                    <p class="text-zinc-500 text-sm mb-8 leading-relaxed">Strategi pasar & brand positioning.</p>
+                    <div class="flex items-center gap-2 text-primary font-bold text-[11px] uppercase tracking-widest">View Project <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+                </a>
+
+                <a href="copywriting.html" class="file-card bg-white border border-zinc-100 rounded-2xl p-8 relative overflow-hidden group block">
+                    <div class="flex justify-between items-start mb-12">
+                        <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-finish-blue">
+                            <span class="material-symbols-outlined text-3xl">edit_note</span>
+                        </div>
+                        <span class="text-[10px] font-bold text-finish-blue bg-blue-50 px-3 py-1 rounded-full uppercase tracking-widest">Finished</span>
+                    </div>
+                    <h3 class="font-serif-heading text-2xl text-rose-950 mb-2 font-bold">Creative Copywriting</h3>
+                    <p class="text-zinc-500 text-sm mb-8 leading-relaxed">Persuasive narrative & storytelling.</p>
+                    <div class="flex items-center gap-2 text-primary font-bold text-[11px] uppercase tracking-widest">View Project <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+                </a>
+
+                <a href="#" class="file-card bg-white border border-zinc-100 rounded-2xl p-8 relative overflow-hidden group block">
+                    <div class="flex justify-between items-start mb-12">
+                        <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center text-finish-blue">
+                            <span class="material-symbols-outlined text-3xl">share</span>
+                        </div>
+                        <span class="text-[10px] font-bold text-finish-blue bg-blue-50 px-3 py-1 rounded-full uppercase tracking-widest">Finished</span>
+                    </div>
+                    <h3 class="font-serif-heading text-2xl text-rose-950 mb-2 font-bold">Social Media Marketing</h3>
+                    <p class="text-zinc-500 text-sm mb-8 leading-relaxed">Engagement strategy & distributions.</p>
+                    <div class="flex items-center gap-2 text-primary font-bold text-[11px] uppercase tracking-widest">View Project <span class="material-symbols-outlined text-sm">arrow_forward</span></div>
+                </a>
+
+                <div class="bg-zinc-50/50 border border-dashed border-zinc-200 rounded-2xl p-8 opacity-60">
+                    <span class="material-symbols-outlined text-3xl text-zinc-400 mb-12">event_note</span>
+                    <h3 class="font-serif-heading text-2xl text-zinc-400 mb-2 font-bold">Campaign & Media Planning</h3>
+                    <p class="text-zinc-400 text-xs italic">Coming Soon</p>
+                </div>
+
+                <div class="bg-zinc-50/50 border border-dashed border-zinc-200 rounded-2xl p-8 opacity-60">
+                    <span class="material-symbols-outlined text-3xl text-zinc-400 mb-12">ads_click</span>
+                    <h3 class="font-serif-heading text-2xl text-zinc-400 mb-2 font-bold">Facebook Ads</h3>
+                    <p class="text-zinc-400 text-xs italic">Coming Soon</p>
+                </div>
+
+                <div class="bg-zinc-50/50 border border-dashed border-zinc-200 rounded-2xl p-8 opacity-60">
+                    <span class="material-symbols-outlined text-3xl text-zinc-400 mb-12">search_check</span>
+                    <h3 class="font-serif-heading text-2xl text-zinc-400 mb-2 font-bold">Google Ads</h3>
+                    <p class="text-zinc-400 text-xs italic">Coming Soon</p>
+                </div>
+
+                <div class="bg-zinc-50/50 border border-dashed border-zinc-200 rounded-2xl p-8 opacity-60">
+                    <span class="material-symbols-outlined text-3xl text-zinc-400 mb-12">movie_filter</span>
+                    <h3 class="font-serif-heading text-2xl text-zinc-400 mb-2 font-bold">Tiktok Ads</h3>
+                    <p class="text-zinc-400 text-xs italic">Coming Soon</p>
+                </div>
+
+                <div class="bg-zinc-50/50 border border-dashed border-zinc-200 rounded-2xl p-8 opacity-60">
+                    <span class="material-symbols-outlined text-3xl text-zinc-400 mb-12">groups</span>
+                    <h3 class="font-serif-heading text-2xl text-zinc-400 mb-2 font-bold">Influencer & Community</h3>
+                    <p class="text-zinc-400 text-xs italic">Coming Soon</p>
+                </div>
+
+                <div class="bg-zinc-50/50 border border-dashed border-zinc-200 rounded-2xl p-8 opacity-60">
+                    <span class="material-symbols-outlined text-3xl text-zinc-400 mb-12">insights</span>
+                    <h3 class="font-serif-heading text-2xl text-zinc-400 mb-2 font-bold">Google Analytics</h3>
+                    <p class="text-zinc-400 text-xs italic">Coming Soon</p>
+                </div>
+
+                <div class="bg-zinc-50/50 border border-dashed border-zinc-200 rounded-2xl p-8 opacity-60">
+                    <span class="material-symbols-outlined text-3xl text-zinc-400 mb-12">travel_explore</span>
+                    <h3 class="font-serif-heading text-2xl text-zinc-400 mb-2 font-bold">SEO Optimization</h3>
+                    <p class="text-zinc-400 text-xs italic">Coming Soon</p>
+                </div>
+
+                <div class="bg-zinc-50/50 border border-dashed border-zinc-200 rounded-2xl p-8 opacity-60">
+                    <span class="material-symbols-outlined text-3xl text-zinc-400 mb-12">install_mobile</span>
+                    <h3 class="font-serif-heading text-2xl text-zinc-400 mb-2 font-bold">App Store Optimization</h3>
+                    <p class="text-zinc-400 text-xs italic">Coming Soon</p>
+                </div>
+
+                <div class="bg-zinc-50/50 border border-dashed border-zinc-200 rounded-2xl p-8 opacity-60">
+                    <span class="material-symbols-outlined text-3xl text-zinc-400 mb-12">contact_mail</span>
+                    <h3 class="font-serif-heading text-2xl text-zinc-400 mb-2 font-bold">CRM</h3>
+                    <p class="text-zinc-400 text-xs italic">Coming Soon</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full py-10 px-8 bg-[#fff0f3] flex justify-center mt-20">
+        <div class="text-[10px] text-zinc-400 font-medium italic">© 2026 Nabila Amanda — Digital Marketing Specialist.</div>
+    </footer>
+
+</body>
+</html>

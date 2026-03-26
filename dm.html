@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;family=Be+Vietnam+Pro:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#fcf8f9",
+              "error": "#ba1a1a",
+              "on-tertiary-fixed": "#3f001a",
+              "surface-container-low": "#f6f3f4",
+              "on-primary-container": "#790044",
+              "primary-fixed": "#ffd9e4",
+              "outline": "#847378",
+              "on-error-container": "#93000a",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed": "#ffd9e1",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#ffd9e4",
+              "on-surface-variant": "#524347",
+              "tertiary-container": "#ff7ba4",
+              "on-primary": "#ffffff",
+              "secondary-fixed-dim": "#f2b6cb",
+              "on-error": "#ffffff",
+              "tertiary": "#b41b5c",
+              "tertiary-fixed-dim": "#ffb1c5",
+              "secondary-container": "#fec1d6",
+              "on-secondary-fixed-variant": "#65394b",
+              "on-surface": "#1b1b1c",
+              "surface-container-high": "#eae7e8",
+              "error-container": "#ffdad6",
+              "on-primary-fixed": "#3e0020",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed-dim": "#ffb10cc",
+              "on-tertiary-fixed-variant": "#8f0045",
+              "inverse-on-surface": "#f3f0f1",
+              "background": "#fcf8f9",
+              "inverse-primary": "#ffb0cc",
+              "surface-tint": "#a82d68",
+              "surface-dim": "#dcd9da",
+              "surface-container-highest": "#e4e2e3",
+              "on-primary-fixed-variant": "#890f50",
+              "surface-variant": "#e4e2e3",
+              "on-secondary-container": "#7b4c5e",
+              "surface-container": "#f0edee",
+              "surface": "#fcf8f9",
+              "on-secondary-fixed": "#330f1f",
+              "outline-variant": "#d6c1c7",
+              "on-tertiary-container": "#7a003a",
+              "on-background": "#1b1b1c",
+              "primary-container": "#ff79b1",
+              "secondary": "#805062",
+              "primary": "#a82d68",
+              "inverse-surface": "#303031"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+      .folder-hover:hover .folder-tab {
+        transform: translateY(-4px);
+      }
+      .editorial-shadow {
+        box-shadow: 0 10px 40px rgba(168, 45, 104, 0.06);
+      }
+    </style>
+</head>
+<body class="bg-surface-bright text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-[0_10px_40px_rgba(168,45,104,0.06)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<span class="text-2xl font-serif italic text-rose-800">The Editorial Muse</span>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-['Noto_Serif'] font-light tracking-tight text-zinc-600 hover:text-rose-500 transition-colors duration-300" href="#">Home</a>
+<a class="font-['Noto_Serif'] font-light tracking-tight text-zinc-600 hover:text-rose-500 transition-colors duration-300" href="#">About</a>
+<a class="font-['Noto_Serif'] font-light tracking-tight text-rose-700 border-b-2 border-rose-700 pb-1" href="#">All Work</a>
+<a class="font-['Noto_Serif'] font-light tracking-tight text-zinc-600 hover:text-rose-500 transition-colors duration-300" href="#">Resume</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-2.5 rounded-full font-label text-sm tracking-widest uppercase hover:opacity-80 transition-all duration-300 ease-out">
+                Contact
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<!-- Breadcrumbs & Header -->
+<header class="mb-20">
+<nav class="flex items-center gap-2 mb-6 font-label text-xs tracking-[0.2em] uppercase text-outline">
+<a class="hover:text-primary transition-colors" href="#">Portfolio</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Digital Marketing</span>
+</nav>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-2xl">
+<h1 class="font-headline text-6xl md:text-8xl text-on-surface leading-tight mb-4 italic">
+                        Digital <br/>Marketing
+                    </h1>
+<p class="text-lg text-on-surface-variant font-light leading-relaxed">
+                        A curated selection of strategic campaigns, creative copy, and data-driven narratives designed to elevate brand presence in the digital landscape.
+                    </p>
+</div>
+<div class="flex gap-4 mb-2">
+<span class="h-[1px] w-24 bg-outline-variant self-center"></span>
+<span class="font-label text-sm uppercase tracking-widest text-outline">Selected Works 2024</span>
+</div>
+</div>
+</header>
+<!-- Project Folders Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-10 gap-y-16">
+<!-- Folder 1 -->
+<div class="group cursor-pointer folder-hover">
+<div class="relative aspect-[4/3] mb-6">
+<div class="absolute inset-0 bg-primary-fixed-dim/20 rounded-xl transform translate-x-2 translate-y-2 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-500"></div>
+<div class="relative h-full w-full bg-surface-container-lowest rounded-xl editorial-shadow overflow-hidden flex items-center justify-center p-8 border border-outline-variant/10">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700 ease-out rounded-lg" data-alt="Modern office setup with clean aesthetics, soft lighting, and digital marketing dashboard visible on a sleek computer monitor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDHQLt9NLXiPBDYelcFPblfQoqqmDUcTGdx38DVWuvCZry_25TXQlm1VC4ZIr1S9hR2nGLgxspS7M-cT4Bpbb-1XgxAslwTeYzTpJD7DoXT0a3lHpAR4yPSy9hCiAWvfnBuCJmIY2kh4pueAxmseMIXlHW1sgxi77-oOf6HkaUk8jqgHWo_Fp6z_ahwM3AHGqF6xnHAAaVG6-qyS2qW5JNf062sqjo6SF9AfH-APlmrVoxZE1o1kCN-DaI9Jgslj5jYKbfn4Zfnak"/>
+</div>
+<div class="absolute -top-3 left-6 px-4 py-1.5 bg-surface-container-lowest rounded-t-lg border-x border-t border-outline-variant/10 text-[10px] font-label uppercase tracking-widest text-primary folder-tab transition-transform duration-300">
+                        Strategy
+                    </div>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-2 group-hover:text-primary transition-colors">Marketing Management</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Full-scale digital orchestration for luxury lifestyle brands.</p>
+</div>
+<!-- Folder 2 -->
+<div class="group cursor-pointer folder-hover">
+<div class="relative aspect-[4/3] mb-6">
+<div class="absolute inset-0 bg-tertiary-fixed/20 rounded-xl transform translate-x-2 translate-y-2 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-500"></div>
+<div class="relative h-full w-full bg-surface-container-lowest rounded-xl editorial-shadow overflow-hidden flex items-center justify-center p-8 border border-outline-variant/10">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700 ease-out rounded-lg" data-alt="Top view of an open notebook with elegant cursive writing and an expensive fountain pen on a blush pink surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrfBJjC-m-CG1R9AblmMois4mg-o0H8wVccJnaTzSMXHPR7tylkjqcmHZbTFr_5yVd1IzZY0A-hUIeOcokNt3D36DEB6gKZbQXX67m81GBLpObpBTTsKtxp5QtXPqRdIp5smI-ly3Zr4kZ4yrOQ4aKy9R29Dj54Rw9FcecLN1fdZTmXXo3nyJx-pfF3B_ljGOySJDdqZJQbXNv80y-cIuxVaanVmaDYcdp_z9LW50PBYS_ey_RReS1yLCm2p12RWwyxj7J237vh4o"/>
+</div>
+<div class="absolute -top-3 left-6 px-4 py-1.5 bg-surface-container-lowest rounded-t-lg border-x border-t border-outline-variant/10 text-[10px] font-label uppercase tracking-widest text-primary folder-tab transition-transform duration-300">
+                        Creative
+                    </div>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-2 group-hover:text-primary transition-colors">Creative Copywriting</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Compelling narratives that convert and captivate audiences.</p>
+</div>
+<!-- Folder 3 -->
+<div class="group cursor-pointer folder-hover">
+<div class="relative aspect-[4/3] mb-6">
+<div class="absolute inset-0 bg-secondary-fixed/20 rounded-xl transform translate-x-2 translate-y-2 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-500"></div>
+<div class="relative h-full w-full bg-surface-container-lowest rounded-xl editorial-shadow overflow-hidden flex items-center justify-center p-8 border border-outline-variant/10">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700 ease-out rounded-lg" data-alt="Social media app icons floating over a soft pink background with elegant bokeh and atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjchQR2_brCI-_cIc4xX7UJQJgHoOmFLftD7dJlO5kH5qhwsvFb4pY6epC0VJBeVy9OW3MZzLMaDfKMiiKsh18ie6ybEkymyQRxWeVRrrtS7IfWL4LmCpSQS5GI41hU-N3Nk3JcuLY2KU1xqJR1PYQvwaiAjf2CBNKxmaUm3ODI-IQ2Zb36WThd1ihDK4S8oyrWyQpgChr_Vg4QmvlvNbIUas8Tvq4d_nFGJhhFazwo5mcvWDO7MGdA2typb95rR1u1_kUsPGw-Qg"/>
+</div>
+<div class="absolute -top-3 left-6 px-4 py-1.5 bg-surface-container-lowest rounded-t-lg border-x border-t border-outline-variant/10 text-[10px] font-label uppercase tracking-widest text-primary folder-tab transition-transform duration-300">
+                        Social
+                    </div>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-2 group-hover:text-primary transition-colors">Social Media Marketing</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Organic growth strategies and viral engagement frameworks.</p>
+</div>
+<!-- Folder 4 -->
+<div class="group cursor-pointer folder-hover">
+<div class="relative aspect-[4/3] mb-6">
+<div class="absolute inset-0 bg-primary-fixed-dim/20 rounded-xl transform translate-x-2 translate-y-2 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-500"></div>
+<div class="relative h-full w-full bg-surface-container-lowest rounded-xl editorial-shadow overflow-hidden flex items-center justify-center p-8 border border-outline-variant/10">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700 ease-out rounded-lg" data-alt="Clean data visualization charts on a screen with soft focus background of a bright minimalist studio space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi7FmUGc3tBlgJr8m_E5orKYuI67VX-PNi_k_1hkHSStrIEn3if-zUxAAd_S8RCB0Jbs1yUkQA8ROIsQFd9uxbz15hW72TmaNvd_VWW4VLTiLepG0JZLs5EmSVvdNaNFrMqU_SCeVEMPaB7fRqOUC_Wi9hHSDYZ1ZDqA2JiVZ_CzW-DUfFLg3HcEpI5VolmhfBVmLb3832_eMCR_tRqCrhBx8H02WTwwubsCubmm72utL_Ou_DcBt6j1Q9obIwSTS0nXg0fjDwA54"/>
+</div>
+<div class="absolute -top-3 left-6 px-4 py-1.5 bg-surface-container-lowest rounded-t-lg border-x border-t border-outline-variant/10 text-[10px] font-label uppercase tracking-widest text-primary folder-tab transition-transform duration-300">
+                        Growth
+                    </div>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-2 group-hover:text-primary transition-colors">Performance SEO</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Search optimization that prioritizes both bots and humans.</p>
+</div>
+<!-- Folder 5 -->
+<div class="group cursor-pointer folder-hover">
+<div class="relative aspect-[4/3] mb-6">
+<div class="absolute inset-0 bg-tertiary-fixed/20 rounded-xl transform translate-x-2 translate-y-2 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-500"></div>
+<div class="relative h-full w-full bg-surface-container-lowest rounded-xl editorial-shadow overflow-hidden flex items-center justify-center p-8 border border-outline-variant/10">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700 ease-out rounded-lg" data-alt="Minimalist email inbox interface on a tablet screen surrounded by aesthetic stationery and a latte" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWaC9tYOasfSBt0J3NKFEwtjW19oXnY_1E3KHe4wU_O7DKKJKhLnDgGSsF6GxJBWeeoWwOdr3h2fqLXMgnjk1uXZOKF2AFItuVAIY-jM9lnTbWcHaAr5pq4qMEGXXmYKFfwKYMHbx8G_WoRcN52qhg238VXwnQgaI0kcC2oP3Ip_ld2MOz07_wRofsmWSvePyvREv39nZOobKjK68eJ-UfIw8BVa3OgAOrASmGJZi0t6TLM0__3DiCpJg8kGH3mWQBNKyjmUR75jQ"/>
+</div>
+<div class="absolute -top-3 left-6 px-4 py-1.5 bg-surface-container-lowest rounded-t-lg border-x border-t border-outline-variant/10 text-[10px] font-label uppercase tracking-widest text-primary folder-tab transition-transform duration-300">
+                        Retention
+                    </div>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-2 group-hover:text-primary transition-colors">Email Automation</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Behavioral-led sequences for high-end boutique e-commerce.</p>
+</div>
+<!-- Folder 6 -->
+<div class="group cursor-pointer folder-hover">
+<div class="relative aspect-[4/3] mb-6">
+<div class="absolute inset-0 bg-secondary-fixed/20 rounded-xl transform translate-x-2 translate-y-2 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-500"></div>
+<div class="relative h-full w-full bg-surface-container-lowest rounded-xl editorial-shadow overflow-hidden flex items-center justify-center p-8 border border-outline-variant/10">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700 ease-out rounded-lg" data-alt="Close-up of diverse hands collaborating over a moodboard with fabric samples and brand identity sketches" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcJtn6i84Kh-2k2QtPTAU8G8p1iwI6LodAVLDlJ7dRh0GjYKAfsIBFzRX5FjdhHPXbuQT4rXCe81Wl327ZMZe4qrWC-cP3b7EbrOHfAiElwv2j5yJIjsZTvOEg0TMOtCVEYWXuLmNK7q7e7ZW3Zlh09uAStl9Ic5qFMGfLhSI8KxGmN6uHI3Q3STQHOOLneZyZqiSZAOH_nMfCW-SlWryXkatsGHEhAeJMbHMKHvdNEos6tm6M425j23yHawIj0Ut0CAqRO_8apos"/>
+</div>
+<div class="absolute -top-3 left-6 px-4 py-1.5 bg-surface-container-lowest rounded-t-lg border-x border-t border-outline-variant/10 text-[10px] font-label uppercase tracking-widest text-primary folder-tab transition-transform duration-300">
+                        Partnership
+                    </div>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-2 group-hover:text-primary transition-colors">Influencer Outreach</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Building authentic bridges between creators and luxury brands.</p>
+</div>
+<!-- Folder 7 -->
+<div class="group cursor-pointer folder-hover">
+<div class="relative aspect-[4/3] mb-6">
+<div class="absolute inset-0 bg-primary-fixed-dim/20 rounded-xl transform translate-x-2 translate-y-2 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-500"></div>
+<div class="relative h-full w-full bg-surface-container-lowest rounded-xl editorial-shadow overflow-hidden flex items-center justify-center p-8 border border-outline-variant/10">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700 ease-out rounded-lg" data-alt="Crisp architectural photography of a creative studio space with large windows and soft afternoon light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwjEk5uF0QSECjAuzT-Atg1hzf648R7CkNCZ24Itnd8YewWrALCCWde8YNr3Etnd_2_lDASqorU_R_oI0pnnjv8Pe_Kc9L8rNf8ob9-3voalPHkAK8Mx19EjdSb3ZweANapSs4MDrMfAGuXTvzhEGbGTr38uiuHW340Txl_-OsaUoaB_5_1k_xi6ok0_J2W0dxqZ-L2pCN2duYoNOXjys4iRNJh5mrgjs0ZC4zjY-tnZpMT17D37ovVAm62wFQEB_8dovHjmfVbAY"/>
+</div>
+<div class="absolute -top-3 left-6 px-4 py-1.5 bg-surface-container-lowest rounded-t-lg border-x border-t border-outline-variant/10 text-[10px] font-label uppercase tracking-widest text-primary folder-tab transition-transform duration-300">
+                        Branding
+                    </div>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-2 group-hover:text-primary transition-colors">Identity Systems</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Visual storytelling through cohesive digital design languages.</p>
+</div>
+<!-- Folder 8 -->
+<div class="group cursor-pointer folder-hover">
+<div class="relative aspect-[4/3] mb-6">
+<div class="absolute inset-0 bg-tertiary-fixed/20 rounded-xl transform translate-x-2 translate-y-2 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-500"></div>
+<div class="relative h-full w-full bg-surface-container-lowest rounded-xl editorial-shadow overflow-hidden flex items-center justify-center p-8 border border-outline-variant/10">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700 ease-out rounded-lg" data-alt="Macro shot of shimmering liquid gold with elegant swirls and reflections in warm pink studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV4mIZUiH_p5LpLeYYr4eHZD5SEgc6DAtMnUEYzcfA3Z5C4EDXVRIDqfV9bUFmEIXegw_Fdta0iQbR35HRbKAAdaSZ3mo2SPDHU0oPYmThvtLVbzOJ3CjnrK_FRPhhw0WkSDTVZwFMef23tHy_axW05kRNQdD0dzC2TYxCSCf29w7mj9txPdo_05e0_KnOM9Klh0n30gB-zbVcY5ljJz6Eyxg5t6D7CO5seLjJ33SKTXjbshFa4O05r7HhPo02eI3KbkkPZOIa2qM"/>
+</div>
+<div class="absolute -top-3 left-6 px-4 py-1.5 bg-surface-container-lowest rounded-t-lg border-x border-t border-outline-variant/10 text-[10px] font-label uppercase tracking-widest text-primary folder-tab transition-transform duration-300">
+                        Advertising
+                    </div>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-2 group-hover:text-primary transition-colors">Paid Media Strategy</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">High-ROAS campaigns for premium global marketplaces.</p>
+</div>
+<!-- Folder 9 -->
+<div class="group cursor-pointer folder-hover">
+<div class="relative aspect-[4/3] mb-6">
+<div class="absolute inset-0 bg-secondary-fixed/20 rounded-xl transform translate-x-2 translate-y-2 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-500"></div>
+<div class="relative h-full w-full bg-surface-container-lowest rounded-xl editorial-shadow overflow-hidden flex items-center justify-center p-8 border border-outline-variant/10">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700 ease-out rounded-lg" data-alt="Elegant hands holding a smartphone with a clean minimalist app interface on the screen in a bright airy room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ3ZWqU5Fa0fjt8EscOYla52Xt6zkjn1QSVx5rjaX6jafNabPP_yK95OXtXRcAj9UxRrj1Xn-BIa3stWXPxo27i6KkmcivObBb1VZLgDVV7CLqdZtFYaK49pYr8ZJmuPeEIMc4wx2J7GLiyjT1pL1f-R7zyp6GOFwx45yk4ihQsxvtK3IsPx_S8uXsZFlVcjig6y8wI2W40aSa0Tmf8a0PD1KZod3Wp6LFg3wQL5PDYSAxWTjRlo5YecX9ynI6ctH83fEEfYRIJao"/>
+</div>
+<div class="absolute -top-3 left-6 px-4 py-1.5 bg-surface-container-lowest rounded-t-lg border-x border-t border-outline-variant/10 text-[10px] font-label uppercase tracking-widest text-primary folder-tab transition-transform duration-300">
+                        Mobile
+                    </div>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-2 group-hover:text-primary transition-colors">App Growth Engine</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Strategic user acquisition for mobile-first lifestyle startups.</p>
+</div>
+<!-- Folder 10 -->
+<div class="group cursor-pointer folder-hover">
+<div class="relative aspect-[4/3] mb-6">
+<div class="absolute inset-0 bg-primary-fixed-dim/20 rounded-xl transform translate-x-2 translate-y-2 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-500"></div>
+<div class="relative h-full w-full bg-surface-container-lowest rounded-xl editorial-shadow overflow-hidden flex items-center justify-center p-8 border border-outline-variant/10">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700 ease-out rounded-lg" data-alt="Group of creative professionals in a brainstorming session with large whiteboards and designer furniture in a modern loft" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnkKKWq8dDX5MxnmQn3pHPuzWtyf8R_bXXhb-jB4NekxmBBGnxKd6CaSkouxxAWoRdmRFAhcL7lJ0hs0rYF8y22qQtVjcbGeJCPUj7pOyrDi40UHyMNjyeBWIIlBFHI54g69iQLyxF1dZpHaeHyzn4ZNFMA2TlN2iaIX0mGlH4-tz7Ws0J8gZ2OSQbJ1PUZ56rfwjT3TUKfyzDKuIllbbma1PrCxFPHtnD8BWdYd2xwDd44bgPzRuWm7w7VpfSuVgej-jwW0X1CT8"/>
+</div>
+<div class="absolute -top-3 left-6 px-4 py-1.5 bg-surface-container-lowest rounded-t-lg border-x border-t border-outline-variant/10 text-[10px] font-label uppercase tracking-widest text-primary folder-tab transition-transform duration-300">
+                        Consulting
+                    </div>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-2 group-hover:text-primary transition-colors">Market Research</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Deep-dive consumer insights for boutique fashion labels.</p>
+</div>
+<!-- Folder 11 -->
+<div class="group cursor-pointer folder-hover">
+<div class="relative aspect-[4/3] mb-6">
+<div class="absolute inset-0 bg-tertiary-fixed/20 rounded-xl transform translate-x-2 translate-y-2 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-500"></div>
+<div class="relative h-full w-full bg-surface-container-lowest rounded-xl editorial-shadow overflow-hidden flex items-center justify-center p-8 border border-outline-variant/10">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700 ease-out rounded-lg" data-alt="Abstract artistic shot of ink diffusing in water with soft rose and gold color palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEYXNe5jPSiZ9hs_5Vb8y9ev9dU1kfKVgpNMJrX7nMO0DX6xnQDBIVZE1ETl4xTU-hvMW_hju5_J4UDEyWrVKEhthl25UJEV1Rk7PcVRQVaDdfLshuBbHaccmbBDT27He1WoUGQ5yVF-JaJdK7g5lFWy1xA1iCS2shwnRzrsz19adcYuLn7GxgZRquYMSTBy7O7w2O64zZRFsnYWcb8G75ITxukRdSINWyTh-nr_lRz2ERW7WpKEpxifgal3TV3NxeuteIjW3bd88"/>
+</div>
+<div class="absolute -top-3 left-6 px-4 py-1.5 bg-surface-container-lowest rounded-t-lg border-x border-t border-outline-variant/10 text-[10px] font-label uppercase tracking-widest text-primary folder-tab transition-transform duration-300">
+                        Content
+                    </div>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-2 group-hover:text-primary transition-colors">Video Storytelling</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Cinematic short-form content for Instagram and TikTok.</p>
+</div>
+<!-- Folder 12 -->
+<div class="group cursor-pointer folder-hover">
+<div class="relative aspect-[4/3] mb-6">
+<div class="absolute inset-0 bg-secondary-fixed/20 rounded-xl transform translate-x-2 translate-y-2 group-hover:translate-x-3 group-hover:translate-y-3 transition-transform duration-500"></div>
+<div class="relative h-full w-full bg-surface-container-lowest rounded-xl editorial-shadow overflow-hidden flex items-center justify-center p-8 border border-outline-variant/10">
+<img class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700 ease-out rounded-lg" data-alt="Portrait of a young creative professional woman in a bright designer workspace with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6Kbs2IwT9kJ1svChgcN4aYpGrAAV3-rllzBj2_9Mfqrrb3NSZL5btwbxsXbvcYGNQ9W7u2twl94uryQrg2T0RQDVm3jzWhBJe4ZLRPNsNhzVsPAR3BMgG3TkWcdgH9fT30xrCSCwfZwIaawgBTT9uFwR17s3fjOjw00sTw8rHfAqMGNMhdOyCl2XLy4_adIHXDbhPTcmpHeNTicAisQJjamsp987BG6E8FO-XBya_LqU-arNTFjXWl0UByY4Ipe9-uKW-JoYftzM"/>
+</div>
+<div class="absolute -top-3 left-6 px-4 py-1.5 bg-surface-container-lowest rounded-t-lg border-x border-t border-outline-variant/10 text-[10px] font-label uppercase tracking-widest text-primary folder-tab transition-transform duration-300">
+                        Leadership
+                    </div>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-2 group-hover:text-primary transition-colors">Executive Mentorship</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Empowering marketing teams with luxury-standard training.</p>
+</div>
+</div>
+<!-- Custom Editorial Quote Section -->
+<section class="mt-32 p-16 bg-primary-fixed-dim/10 rounded-full text-center">
+<blockquote class="max-w-4xl mx-auto">
+<p class="font-headline text-3xl md:text-4xl text-on-surface leading-relaxed italic">
+                    "Strategy is the art of making the invisible, visible; transforming digital noise into a symphony of brand loyalty."
+                </p>
+<footer class="mt-8 font-label text-xs uppercase tracking-[0.3em] text-primary">
+                    — The Muse Principle
+                </footer>
+</blockquote>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-zinc-50 border-t border-outline-variant/10 py-12 px-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+<span class="text-lg font-serif text-rose-900 italic">Editorial Muse</span>
+<div class="flex gap-8">
+<a class="font-label text-sm tracking-widest uppercase text-zinc-500 hover:text-rose-600 transition-colors" href="#">LinkedIn</a>
+<a class="font-label text-sm tracking-widest uppercase text-zinc-500 hover:text-rose-600 transition-colors" href="#">Instagram</a>
+<a class="font-label text-sm tracking-widest uppercase text-zinc-500 hover:text-rose-600 transition-colors" href="#">Dribbble</a>
+<a class="font-label text-sm tracking-widest uppercase text-zinc-500 hover:text-rose-600 transition-colors" href="#">Email</a>
+</div>
+<p class="font-label text-sm tracking-widest uppercase text-zinc-500">
+                © 2024 Editorial Muse. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>

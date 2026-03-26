@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Photography | Nabila Amanda</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;0,800;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#a82d68",
+                        "surface": "#fcf8f9",
+                    },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; scroll-behavior: smooth; }
+        .font-serif-heading { font-family: 'Noto Serif', serif; }
+        
+        /* Masonry Layout Setup */
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 768px) { .masonry-grid { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry-grid { column-count: 3; } }
+
+        .photo-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .photo-item:hover {
+            transform: scale(1.02);
+            filter: saturate(1.1);
+        }
+        .photo-item img {
+            width: 100%;
+            height: auto; /* Ini kuncinya biar bingkai ngikutin foto */
+            display: block;
+            border-radius: 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-[#1b1b1c]">
+
+    <header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-between items-center px-8 md:px-12 py-6 border-b border-rose-100/20">
+        <div class="font-serif italic text-2xl text-rose-900 font-bold">Portfolio</div>
+        <nav class="hidden md:flex gap-10 uppercase tracking-widest text-[11px] text-zinc-500 font-bold">
+            <a href="index.html" class="hover:text-primary transition-colors">HOME</a>
+            <a href="all-work.html" class="text-primary border-b-2 border-primary pb-1">ALL WORK</a>
+            <a href="#" class="hover:text-primary transition-colors">ABOUT</a>
+            <a href="#" class="hover:text-primary transition-colors">RESUME</a>
+        </nav>
+        <button class="bg-primary text-white px-6 py-2 rounded-full uppercase tracking-widest text-[11px] font-bold">CONTACT</button>
+    </header>
+
+    <main>
+        <section class="pt-48 pb-16 px-8 md:px-12 bg-gradient-to-b from-[#fff0f3] to-surface">
+            <div class="max-w-7xl mx-auto text-center">
+                <nav class="flex justify-center items-center gap-2 mb-8 uppercase tracking-[0.2em] text-[10px] font-bold text-zinc-400">
+                    <a href="all-work.html" class="hover:text-primary transition-colors">All Work</a>
+                    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+                    <span class="text-primary">Photography</span>
+                </nav>
+
+                <h1 class="font-serif-heading text-6xl md:text-8xl font-extrabold leading-tight text-rose-950">
+                    Visual<br><span class="italic text-primary">Stories.</span>
+                </h1>
+                <p class="text-lg text-zinc-500 max-w-xl mx-auto mt-8 leading-relaxed">
+                    Menangkap momen melalui lensa dengan estetika ambient dan tenang.
+                </p>
+            </div>
+        </section>
+
+        <section class="px-8 md:px-12 py-12 max-w-7xl mx-auto">
+            <div class="masonry-grid">
+                
+                <div class="photo-item shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000" alt="Work 1">
+                </div>
+                <div class="photo-item shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?q=80&w=800" alt="Work 2">
+                </div>
+                <div class="photo-item shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1200" alt="Work 3">
+                </div>
+                <div class="photo-item shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1554080353-a576cf803bda?q=80&w=900" alt="Work 4">
+                </div>
+                <div class="photo-item shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1100" alt="Work 5">
+                </div>
+                <div class="photo-item shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1300" alt="Work 6">
+                </div>
+                <div class="photo-item shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?q=80&w=800" alt="Work 7">
+                </div>
+                <div class="photo-item shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1000" alt="Work 8">
+                </div>
+                <div class="photo-item shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=900" alt="Work 9">
+                </div>
+                <div class="photo-item shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1100" alt="Work 10">
+                </div>
+                <div class="photo-item shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200" alt="Work 11">
+                </div>
+                <div class="photo-item shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=900" alt="Work 12">
+                </div>
+                <div class="photo-item shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1000" alt="Work 13">
+                </div>
+                <div class="photo-item shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1433086566711-9236d893f15d?q=80&w=1100" alt="Work 14">
+                </div>
+                <div class="photo-item shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?q=80&w=1200" alt="Work 15">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full py-10 px-8 bg-[#fff0f3] flex flex-col items-center gap-4 mt-20">
+        <div class="font-serif italic text-lg text-rose-900 font-bold">The Editorial Muse</div>
+        <div class="text-[10px] text-zinc-400 font-medium italic uppercase tracking-widest">
+            © 2026 Nabila Amanda — Visual Storyteller
+        </div>
+    </footer>
+
+</body>
+</html>

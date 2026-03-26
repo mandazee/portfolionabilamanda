@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Resume | Nabila Amanda</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;0,800;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#a82d68",
+                        "surface": "#fcf8f9",
+                    },
+                },
+            },
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; scroll-behavior: smooth; }
+        .font-serif-heading { font-family: 'Noto Serif', serif; }
+
+        @media print {
+            @page { size: A4; margin: 0.8cm; }
+            .no-print { display: none !important; }
+            body { background: white !important; color: black !important; padding-top: 0 !important; }
+            main { padding: 0 !important; }
+            .resume-container { 
+                box-shadow: none !important; 
+                border: none !important; 
+                padding: 0 !important; 
+                margin: 0 !important; 
+                width: 100% !important;
+            }
+            footer { display: none !important; }
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-[#1b1b1c]">
+
+    <header class="no-print fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-between items-center px-8 md:px-12 py-4 border-b border-rose-100/10">
+        <div class="font-serif italic text-xl text-rose-900 font-bold">Portfolio</div>
+        <nav class="hidden md:flex gap-10 uppercase tracking-widest text-[10px] text-zinc-500 font-bold">
+            <a href="index.html" class="hover:text-primary transition-colors">HOME</a>
+            <a href="all-work.html" class="hover:text-primary transition-colors">ALL WORK</a>
+            <a href="about.html" class="hover:text-primary transition-colors">ABOUT</a>
+            <a href="resume.html" class="text-primary border-b-2 border-primary pb-1">RESUME</a>
+        </nav>
+        <button onclick="window.print()" class="bg-primary text-white px-6 py-2 rounded-full uppercase tracking-widest text-[10px] font-bold hover:opacity-90 transition-opacity flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">print</span> PRINT PDF
+        </button>
+    </header>
+
+    <main class="pt-24 pb-12 px-4 md:px-8">
+        <div class="resume-container max-w-4xl mx-auto bg-white p-8 md:p-14 rounded-[2.5rem] shadow-sm border border-rose-50">
+            
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12 border-b border-rose-100 pb-10">
+                <div>
+                    <h1 class="font-serif-heading text-4xl md:text-5xl font-bold text-rose-950">Nabila Amanda</h1>
+                    <p class="text-primary font-bold tracking-[0.25em] uppercase text-[10px] mt-2">Information Systems Student • Digital Strategist</p>
+                </div>
+                <div class="text-left md:text-right text-[10px] text-zinc-500 font-bold tracking-widest uppercase leading-loose">
+                    <p class="flex items-center md:justify-end gap-2"><span class="material-symbols-outlined text-sm">location_on</span> Cikarang, Indonesia</p>
+                    <p class="flex items-center md:justify-end gap-2"><span class="material-symbols-outlined text-sm">mail</span> nabilaamanda3306@gmail.com</p>
+                    <p class="flex items-center md:justify-end gap-2"><span class="material-symbols-outlined text-sm">link</span> linkedin.com/in/nabilaamanda</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-8 space-y-12">
+                    
+                    <section>
+                        <h2 class="font-serif-heading text-xl font-bold text-rose-950 mb-4 flex items-center gap-3">
+                            Executive Summary <span class="h-[1px] flex-grow bg-rose-100"></span>
+                        </h2>
+                        <p class="text-zinc-600 text-sm leading-relaxed font-light">
+                            Mahasiswi Sistem Informasi semester 5 dengan konsentrasi ERP (Epicor). Memiliki latar belakang Ilmu Pengetahuan Sosial yang kuat, memungkinkan saya untuk menjembatani manajemen proses bisnis yang kaku dengan pendekatan komunikasi dan estetika digital yang kreatif. Berfokus pada efisiensi sistem dan narasi brand.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="font-serif-heading text-xl font-bold text-rose-950 mb-8 flex items-center gap-3">
+                            Education <span class="h-[1px] flex-grow bg-rose-100"></span>
+                        </h2>
+                        <div class="space-y-8">
+                            <div class="relative pl-6 border-l-2 border-rose-100">
+                                <div class="absolute w-3 h-3 bg-primary rounded-full -left-[7.5px] top-1.5 border-2 border-white"></div>
+                                <div class="flex justify-between items-start mb-1">
+                                    <h3 class="font-bold text-rose-900 text-base">Sistem Informasi Bisnis & Manajemen</h3>
+                                    <span class="text-[9px] font-black text-primary border border-primary px-2 py-0.5 rounded">2024 — PRESENT</span>
+                                </div>
+                                <p class="text-zinc-500 text-[11px] mb-3 font-medium">Semester 05 • Fokus Konsentrasi ERP</p>
+                                <ul class="text-zinc-600 text-[12px] space-y-2 list-disc list-inside font-light">
+                                    <li>Mendalami implementasi & aliran bisnis pada software <b class="text-rose-900">Epicor ERP</b>.</li>
+                                    <li>Mempelajari System Analysis, Manajemen Basis Data (MySQL), dan Pengembangan Aplikasi.</li>
+                                    <li>Aktif dalam riset mengenai efektivitas platform e-learning.</li>
+                                </ul>
+                            </div>
+
+                            <div class="relative pl-6 border-l-2 border-rose-50">
+                                <div class="absolute w-3 h-3 bg-rose-200 rounded-full -left-[7.5px] top-1.5 border-2 border-white"></div>
+                                <div class="flex justify-between items-start mb-1">
+                                    <h3 class="font-bold text-rose-900 text-base">SMAN 4 Sukabumi</h3>
+                                    <span class="text-[9px] font-bold text-zinc-400 uppercase">2021 — 2024</span>
+                                </div>
+                                <p class="text-zinc-500 text-[11px] font-medium">Peminatan Ilmu Pengetahuan Sosial (IPS)</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="md:col-span-4 space-y-12">
+                    <section>
+                        <h3 class="uppercase tracking-widest text-[10px] text-primary font-black mb-6">Expertise Toolkit</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-[10px] font-bold uppercase mb-1.5">
+                                    <span>Epicor ERP</span> <span class="text-primary">Advanced</span>
+                                </div>
+                                <div class="h-1 bg-rose-50 rounded-full overflow-hidden"><div class="h-full bg-primary w-[85%]"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-[10px] font-bold uppercase mb-1.5">
+                                    <span>Digital Marketing</span> <span class="text-primary">Advanced</span>
+                                </div>
+                                <div class="h-1 bg-rose-50 rounded-full overflow-hidden"><div class="h-full bg-primary w-[80%]"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-[10px] font-bold uppercase mb-1.5 text-zinc-500">
+                                    <span>SQL & Database</span> <span>Intermediate</span>
+                                </div>
+                                <div class="h-1 bg-rose-50 rounded-full overflow-hidden"><div class="h-full bg-rose-200 w-[60%]"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-[10px] font-bold uppercase mb-1.5 text-zinc-500">
+                                    <span>Figma / Design</span> <span>Intermediate</span>
+                                </div>
+                                <div class="h-1 bg-rose-50 rounded-full overflow-hidden"><div class="h-full bg-rose-200 w-[65%]"></div></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h3 class="uppercase tracking-widest text-[10px] text-primary font-black mb-6">Language Skills</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-full border border-rose-100 flex items-center justify-center text-[10px] font-bold text-primary">ID</div>
+                                <div>
+                                    <p class="text-[11px] font-bold text-rose-950 uppercase">Indonesian</p>
+                                    <p class="text-[9px] text-zinc-400 uppercase font-medium">Native Proficiency</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-full border border-rose-100 flex items-center justify-center text-[10px] font-bold text-primary">EN</div>
+                                <div>
+                                    <p class="text-[11px] font-bold text-rose-950 uppercase">English</p>
+                                    <p class="text-[9px] text-zinc-400 uppercase font-medium">Intermediate / Academic</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="p-6 bg-rose-50 rounded-3xl border border-rose-100 no-print">
+                        <p class="text-[10px] font-bold text-rose-900 leading-relaxed uppercase tracking-widest italic text-center">
+                            "Ready to transform business structures into digital masterpieces."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="no-print w-full py-12 px-8 bg-[#fff0f3] border-t border-rose-100 mt-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 text-center md:text-left">
+            
+            <div class="font-serif italic text-2xl text-rose-900 font-bold">
+                Portfolio of Nabila Amanda
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-x-10 gap-y-6">
+                <a href="mailto:nabilaamanda3306@gmail.com" class="flex items-center gap-3 group">
+                    <span class="material-symbols-outlined text-primary text-2xl">mail</span>
+                    <div class="text-left">
+                        <p class="text-[10px] font-black text-zinc-400 uppercase leading-none mb-1">Email</p>
+                        <p class="text-[13px] font-bold text-rose-950 group-hover:text-primary transition-colors">nabilaamanda3306@gmail.com</p>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/6285880810406" target="_blank" class="flex items-center gap-3 group">
+                    <span class="material-symbols-outlined text-primary text-2xl">chat</span>
+                    <div class="text-left">
+                        <p class="text-[10px] font-black text-zinc-400 uppercase leading-none mb-1">WhatsApp</p>
+                        <p class="text-[13px] font-bold text-rose-950 group-hover:text-primary transition-colors">+62 858 8081 0406</p>
+                    </div>
+                </a>
+
+                <a href="https://linkedin.com/in/nabilaamanda" target="_blank" class="flex items-center gap-3 group">
+                    <span class="material-symbols-outlined text-primary text-2xl">work</span>
+                    <div class="text-left">
+                        <p class="text-[10px] font-black text-zinc-400 uppercase leading-none mb-1">LinkedIn</p>
+                        <p class="text-[13px] font-bold text-rose-950 group-hover:text-primary transition-colors">Nabila Amanda</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="text-[10px] text-zinc-400 font-bold tracking-[0.3em] uppercase">
+                © 2026 NABILA AMANDA.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
