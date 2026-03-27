@@ -7,131 +7,322 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;0,800;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-    
     <script id="tailwind-config">
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        "primary": "#a82d68",
-                        "primary-container": "#ff79b1",
-                        "surface": "#fcf8f9",
-                    },
+                    colors: { "primary": "#a82d68", "surface": "#fcf8f9" },
                 },
             },
         }
     </script>
-
     <style>
         body { font-family: 'Be Vietnam Pro', sans-serif; scroll-behavior: smooth; }
         .font-serif-heading { font-family: 'Noto Serif', serif; }
+        .experience-item { transition: all 0.5s ease; }
     </style>
 </head>
 
 <body class="bg-surface text-[#1b1b1c]">
 
-    <header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-between items-center px-8 md:px-12 py-4 border-b border-rose-100/10">
-        <div class="font-serif italic text-xl text-rose-900 font-bold">Portfolio</div>
-        <nav class="hidden md:flex gap-10 uppercase tracking-widest text-[10px] text-zinc-500 font-bold">
+    <header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-between items-center px-8 md:px-12 py-3 border-b border-rose-100/10">
+        <div class="font-serif italic text-lg text-rose-900 font-bold">Portfolio</div>
+        <nav class="hidden md:flex gap-8 uppercase tracking-widest text-[9px] text-zinc-500 font-bold">
             <a href="index.html" class="hover:text-primary transition-colors">HOME</a>
             <a href="all-work.html" class="hover:text-primary transition-colors">ALL WORK</a>
             <a href="about.html" class="text-primary border-b-2 border-primary pb-1">ABOUT</a>
             <a href="resume.html" class="hover:text-primary transition-colors">RESUME</a>
         </nav>
-        <a href="contact.html" class="bg-primary text-white px-6 py-2 rounded-full uppercase tracking-widest text-[10px] font-bold hover:opacity-90 transition-opacity">CONTACT</a>
+        <a href="contact.html" class="bg-primary text-white px-5 py-1.5 rounded-full uppercase tracking-widest text-[9px] font-bold">CONTACT</a>
     </header>
 
     <main>
-        <section class="pt-32 pb-12 px-8 md:px-12 bg-gradient-to-br from-[#fff0f6] to-[#fcf8f9]">
-            <div class="max-w-7xl mx-auto">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-                    <div class="lg:col-span-7">
-                        <span class="uppercase tracking-widest text-[11px] text-primary font-bold mb-3 block">Who am i?</span>
-                        <h1 class="font-serif-heading text-5xl md:text-6xl font-extrabold leading-tight text-rose-950">
-                            I'm <span class="italic text-primary">Nabila Amanda</span>, <br>an Information Systems student specializing in ERP.
-                        </h1>
-                        <p class="mt-6 text-base text-zinc-600 max-w-lg leading-relaxed font-light">
-                           Currently in my 5th semester and based in Indonesia, I’m interested in learning 
-                            how business processes work and how systems like Epicor ERP support and improve them, while also exploring creative work.
-                        </p>
+        <section class="pt-24 pb-6 px-8 md:px-12 bg-gradient-to-br from-[#fff0f6] to-[#fcf8f9]">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7">
+                    <span class="uppercase tracking-widest text-[10px] text-primary font-bold mb-2 block">Background</span>
+                    <h1 class="font-serif-heading text-4xl md:text-5xl font-extrabold leading-tight text-rose-950">
+                        I'm <span class="italic text-primary">Nabila Amanda</span>, <br>an Information Systems student specializing in ERP.
+                    </h1>
+                    <div class="mt-4 text-sm text-zinc-600 max-w-xl leading-relaxed font-light">
+                        <p>As an Information Systems student with a strong interest in ERP systems (Epicor), I am dedicated to helping businesses operate more efficiently through data. My experience across various organizations, combined with my background in creativity and digital marketing, has shaped my ability to manage dynamic projects. I am ready to contribute in an environment that requires collaboration between systems logic and creativity.</p>
                     </div>
-                    <div class="lg:col-span-5 flex justify-center lg:justify-end">
-                        <div class="w-72 h-96 bg-white rounded-[2rem] overflow-hidden shadow-xl border-[6px] border-white ring-1 ring-rose-100 rotate-2 hover:rotate-0 transition-transform duration-500">
-                            <img src="img/mypic.jpg" alt="Nabila Amanda" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
-                        </div>
+                </div>
+                <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                    <div class="w-56 h-72 bg-white rounded-3xl overflow-hidden shadow-lg border-[4px] border-white ring-1 ring-rose-100 rotate-2">
+                        <img src="img/mypic.jpg" class="w-full h-full object-cover transition-all duration-700">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="max-w-7xl mx-auto px-8 md:px-12 py-16">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 border-t border-rose-50 pt-16">
-                <div class="lg:col-span-4 space-y-6">
-                    <div>
-                        <h3 class="uppercase tracking-widest text-[10px] text-zinc-400 font-bold mb-3">Vibe & Vision</h3>
-                        <p class="font-serif-heading text-xl italic leading-relaxed text-rose-900">
-                            "Bridging the gap between structural management and aesthetic expression."
-                        </p>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 rounded-full border border-rose-100 text-[9px] font-bold text-primary bg-rose-50 uppercase">Digital Marketing</span>
-                        <span class="px-3 py-1 rounded-full border border-rose-100 text-[9px] font-bold text-primary bg-rose-50 uppercase">ERP Systems</span>
-                        <span class="px-3 py-1 rounded-full border border-rose-100 text-[9px] font-bold text-primary bg-rose-50 uppercase">Strategic Design</span>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-8">
-                    <div class="max-w-xl space-y-6 text-base text-zinc-600 leading-relaxed font-light">
-                        <p>
-                            My background is built on a foundation of Social Sciences and evolved into a deep dive into the technical world of Information Systems. I thrive on creating digital experiences that are not only functional but also visually poetic.
-                        </p>
-                        <p>
-                            Whether I am optimizing business processes or designing a brand's digital presence, I believe the "editorial" touch—clean lines and purposeful white space—is what makes a project stand out.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="max-w-7xl mx-auto px-8 md:px-12 pb-24">
-            <h2 class="font-serif-heading text-3xl font-extrabold mb-10 text-rose-950">Educational Path</h2>
-            
-            <div class="grid grid-cols-1 gap-4">
-                <div class="bg-white p-8 md:p-10 rounded-[2.5rem] border border-rose-100 flex flex-col md:flex-row justify-between items-start gap-6 hover:shadow-md transition-shadow">
+        <section class="max-w-6xl mx-auto px-8 md:px-12 py-8 border-t border-rose-50">
+            <h2 class="font-serif-heading text-2xl font-extrabold mb-6 text-rose-950">Educational Path</h2>
+            <div class="grid grid-cols-1 gap-3">
+                <div class="bg-white p-6 rounded-3xl border border-rose-100 flex flex-col md:flex-row justify-between items-start gap-4">
                     <div class="max-w-2xl">
-                        <div class="flex items-center gap-4 mb-2">
-                            <span class="uppercase tracking-widest text-[9px] text-primary font-bold">Higher Education</span>
-                            <span class="text-[9px] font-bold text-zinc-400">2024 — PRESENT</span>
+                        <div class="flex items-center gap-3 mb-1">
+                            <span class="uppercase tracking-widest text-[8px] text-primary font-bold">Higher Education</span>
+                            <span class="text-[8px] font-bold text-zinc-400">2024 — PRESENT</span>
                         </div>
-                        <h3 class="font-serif-heading text-2xl md:text-3xl mb-3 font-bold text-rose-950 leading-tight">Information Systems for Business and Management</h3>
-                        <p class="text-zinc-500 text-sm leading-relaxed">
-                            Currently in my 5th semester, focusing on how technology drives enterprise growth. I have a specialized concentration in <b>ERP (Enterprise Resource Planning)</b>, specifically mastering <b>Epicor</b>.
-                        </p>
+                        <h3 class="font-serif-heading text-xl font-bold text-rose-950 leading-tight">Information Systems for Business and Management</h3>
+                        <p class="text-zinc-500 text-[13px] mt-1">Currently in my 5th semester, focusing on how technology drives enterprise growth. I have a specialized concentration in <b>ERP (Enterprise Resource Planning)</b>, specifically mastering <b>Epicor</b>.</p>
                     </div>
-                    <div class="flex flex-col items-start md:items-end gap-2 shrink-0">
-                        <span class="px-4 py-1.5 bg-primary text-white rounded-full text-[9px] font-bold tracking-widest uppercase">ERP CONCENTRATION</span>
-                        <span class="text-zinc-400 text-[10px] font-bold uppercase tracking-widest">Semester 05</span>
+                    <div class="flex flex-row md:flex-col items-center md:items-end gap-2 shrink-0">
+                        <span class="px-3 py-1 bg-primary text-white rounded-full text-[8px] font-bold tracking-widest uppercase">ERP CONCENTRATION</span>
+                        <span class="text-zinc-400 text-[8px] font-bold uppercase tracking-widest">Semester 05</span>
+                    </div>
+                </div>
+                <div class="bg-[#fdf2f8]/50 p-6 rounded-3xl border border-rose-50 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div class="max-w-xl">
+                        <div class="flex items-center gap-3 mb-1">
+                            <span class="uppercase tracking-widest text-[8px] text-primary font-bold">Early Education</span>
+                            <span class="text-[8px] font-bold text-rose-300">2021 — 2024</span>
+                        </div>
+                        <h3 class="font-serif-heading text-lg font-bold text-rose-950 leading-tight">SMAN 4 Sukabumi</h3>
+                        <p class="text-zinc-500 text-[13px] italic">Graduated with a major in Social Sciences (IPS).</p>
+                    </div>
+                    <span class="px-4 py-1.5 bg-white rounded-lg border border-rose-100 text-rose-900 font-bold text-[8px] tracking-[0.2em] uppercase">Social Sciences</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto px-8 md:px-12 py-10 border-t border-rose-50">
+            <div class="mb-10 text-center">
+                <span class="uppercase tracking-[0.3em] text-[9px] text-primary font-black mb-1 block">Work & Involvement</span>
+                <h2 class="font-serif-heading text-3xl md:text-4xl font-extrabold text-rose-950">Organization & Volunteer</h2>
+            </div>
+
+            <div class="space-y-12">
+                <div class="experience-item flex flex-col lg:flex-row-reverse items-center gap-8 group">
+                    <div class="w-full lg:w-[35%]">
+                        <div class="relative w-full aspect-video overflow-hidden rounded-2xl shadow-lg border-2 border-white ring-1 ring-rose-100">
+                            <img src="img/event0.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[65%] space-y-2">
+                        <h4 class="text-[9px] font-black text-primary uppercase tracking-[0.2em]">November 2025 - Now</h4>
+                        <h3 class="font-serif-heading text-xl md:text-2xl font-bold text-rose-950">Supervisor of EXPORA 2026</h3>
+                        <p class="text-zinc-600 italic border-l-2 border-rose-200 pl-3 text-[13px]">"Oversee and coordinate the comparative study (EXPORA) to ensure it runs smoothly, stays on track, and aligns with the established objectives."</p>
+                        <ul class="space-y-1">
+                            <li class="flex items-start gap-2 text-[13px] text-zinc-500">
+                                <span class="material-symbols-outlined text-primary text-base">check_circle</span>
+                                <p>Overseeing the entire series of EXPORA activities to ensure they proceed as planned.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="space-y-12">
+                <div class="experience-item flex flex-col lg:flex-row items-center gap-8 group">
+                    <div class="w-full lg:w-[35%]">
+                        <div class="relative w-full aspect-video overflow-hidden rounded-2xl shadow-lg border-2 border-white ring-1 ring-rose-100">
+                            <img src="img/event00.jpg" class="w-full h-full object-cover" alt="Event 0">
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[65%] space-y-2">
+                        <h4 class="text-[9px] font-black text-primary uppercase tracking-[0.2em]">November 2025 - Desember 2025</h4>
+                        <h3 class="font-serif-heading text-xl md:text-2xl font-bold text-rose-950">PIC Sponsorship of IStrumental 2025</h3>
+                        <p class="text-zinc-600 italic border-l-2 border-rose-200 pl-3 text-[13px]">"Responsible for securing and managing sponsorship partnerships to support the funding needs of the IStrumental 2025 event."</p>
+                        <ul class="space-y-1">
+                            <li class="flex items-start gap-2 text-[13px] text-zinc-500">
+                                <span class="material-symbols-outlined text-primary text-base">check_circle</span>
+                                <p>Successfully secured 3+ sponsors to support the event's funding.</p>
+                            </li>
+                            <li class="flex items-start gap-2 text-[13px] text-zinc-500">
+                                <span class="material-symbols-outlined text-primary text-base">check_circle</span>
+                                <p>Establishing and managing partnerships with sponsors from the planning stage through to the event.</p>
+                            </li>
+                            <li class="flex items-start gap-2 text-[13px] text-zinc-500">
+                                <span class="material-symbols-outlined text-primary text-base">check_circle</span>
+                                <p>Draft and submit sponsorship proposals to potential partners.</p>
+                            </li>
+                            <li class="flex items-start gap-2 text-[13px] text-zinc-500">
+                                <span class="material-symbols-outlined text-primary text-base">check_circle</span>
+                                <p>Negotiate with sponsors to reach a mutually beneficial agreement.</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="bg-[#fdf2f8] p-8 md:p-10 rounded-[2.5rem] border border-rose-50 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-                    <div class="max-w-xl">
-                        <div class="flex items-center gap-4 mb-2">
-                            <span class="uppercase tracking-widest text-[9px] text-primary font-bold">Early Education</span>
-                            <span class="text-[9px] font-bold text-rose-300">2021 — 2024</span>
+                <div class="experience-item flex flex-col lg:flex-row-reverse items-center gap-8 group">
+                    <div class="w-full lg:w-[35%]">
+                        <div class="relative w-full aspect-video overflow-hidden rounded-2xl shadow-lg border-2 border-white ring-1 ring-rose-100">
+                            <img src="img/rm1.jpg" class="w-full h-full object-cover">
                         </div>
-                        <h3 class="font-serif-heading text-2xl mb-2 font-bold text-rose-950">SMAN 4 Sukabumi</h3>
-                        <p class="text-zinc-500 text-sm leading-relaxed italic">Graduated with a major in Social Sciences (IPS).</p>
                     </div>
-                    <div class="px-5 py-2 bg-white rounded-xl border border-rose-100 text-rose-900 font-bold text-[9px] tracking-[0.2em] uppercase">
-                        Social Sciences
+                    <div class="w-full lg:w-[65%] space-y-2 lg:text-right flex flex-col lg:items-end">
+                        <h4 class="text-[9px] font-black text-primary uppercase tracking-[0.2em]">September 2025 - Februari 2026</h4>
+                        <h3 class="font-serif-heading text-xl md:text-2xl font-bold text-rose-950">Head of Division Relation Management</h3>
+                        <p class="text-zinc-600 italic border-r-2 border-rose-200 pr-3 text-[13px] text-right">"Building and maintaining a healthy ecosystem of relationships to strengthen PUMA IS’s public image."</p>
+                        <ul class="space-y-1 flex flex-col items-end w-full">
+                            <li class="flex flex-row-reverse items-start gap-2 text-[13px] text-zinc-500 text-right"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Succesfully coordinate the Relationship Management team to serve as the first point of contact and provide effective solutions for all PUMA IS members and partners.</p></li>
+                            <li class="flex flex-row-reverse items-start gap-2 text-[13px] text-zinc-500 text-right"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Creating a new engagement initiative that successfully strengthens internal organizational relationships while building trust with external stakeholders.</p></li>
+                        </ul>
                     </div>
                 </div>
+
+                <div class="experience-item flex flex-col lg:flex-row items-center gap-8 group">
+                    <div class="w-full lg:w-[35%]">
+                        <div class="relative w-full aspect-video overflow-hidden rounded-2xl shadow-lg border-2 border-white ring-1 ring-rose-100">
+                            <img src="img/event1.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[65%] space-y-2">
+                        <h4 class="text-[9px] font-black text-primary uppercase tracking-[0.2em]">May 2025 - July 2025</h4>
+                        <h3 class="font-serif-heading text-xl md:text-2xl font-bold text-rose-950">Project Manager of HarmonIS 2025</h3>
+                        <p class="text-zinc-600 italic border-l-2 border-rose-200 pl-3 text-[13px]">"Manage projects from initiation through execution to strengthen internal loyalty."</p>
+                        <ul class="space-y-1 text-[13px] text-zinc-500">
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Fully responsible for the planning and execution of a team-building event for over 40+ members of PUMA IS.</p></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Manage budget allocations and human resources efficiently to achieve event output targets.</p></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Developing strategies to mitigate operational risks in order to ensure the safety and smooth running of the event.</p></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Achieve a 95% participant satisfaction rate based on post-event evaluations.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item flex flex-col lg:flex-row-reverse items-center gap-8 group">
+                    <div class="w-full lg:w-[35%]">
+                        <div class="relative w-full aspect-video overflow-hidden rounded-2xl shadow-lg border-2 border-white ring-1 ring-rose-100">
+                            <img src="img/event2.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[65%] space-y-2 lg:text-right flex flex-col lg:items-end">
+                        <h4 class="text-[9px] font-black text-primary uppercase tracking-[0.2em]">January 2025 - May 2025</h4>
+                        <h3 class="font-serif-heading text-xl md:text-2xl font-bold text-rose-950">Member Documentation of Compscigala 2025</h3>
+                        <p class="text-zinc-600 italic border-r-2 border-rose-200 pr-3 text-[13px] text-right">"Capturing fragments of event memories through a visual lens that tells a story."</p>
+                        <ul class="space-y-1 flex flex-col items-end w-full">
+                            <li class="flex flex-row-reverse items-start gap-2 text-[13px] text-zinc-500 text-right"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Producing high-quality photo and video documentation for publication and reporting purposes.</p></li>
+                            <li class="flex flex-row-reverse items-start gap-2 text-[13px] text-zinc-500 text-right"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Selecting visual content to be used for social media posts after the event.</p></li>
+                            <li class="flex flex-row-reverse items-start gap-2 text-[13px] text-zinc-500 text-right"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Work with the team to determine a documentation angle that aligns with the event’s overarching theme.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item flex flex-col lg:flex-row items-center gap-8 group">
+                    <div class="w-full lg:w-[35%]">
+                        <div class="relative w-full aspect-video overflow-hidden rounded-2xl shadow-lg border-2 border-white ring-1 ring-rose-100">
+                            <img src="img/event3.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[65%] space-y-2">
+                        <h4 class="text-[9px] font-black text-primary uppercase tracking-[0.2em]">January 2025 - May 2025</h4>
+                        <h3 class="font-serif-heading text-xl md:text-2xl font-bold text-rose-950">PIC PR External of Temu Alumni 2025</h3>
+                        <p class="text-zinc-600 italic border-l-2 border-rose-200 pl-3 text-[13px]">"Strengthening networking among alumni and current students melalui direct interaction."</p>
+                        <ul class="space-y-1 text-[13px] text-zinc-500">
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Developing a outreach strategy to engage over 300+ alumni across generations.</p></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Successfully invited and gathered more than 20 alumni from various graduating classes.</p></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Serve as the organization’s representative in establishing initial communication.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item flex flex-col lg:flex-row-reverse items-center gap-8 group">
+                    <div class="w-full lg:w-[35%]">
+                        <div class="relative w-full aspect-video overflow-hidden rounded-2xl shadow-lg border-2 border-white ring-1 ring-rose-100">
+                            <img src="img/event4.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[65%] space-y-2 lg:text-right flex flex-col lg:items-end">
+                        <h4 class="text-[9px] font-black text-primary uppercase tracking-[0.2em]">November 2024 - February 2025</h4>
+                        <h3 class="font-serif-heading text-xl md:text-2xl font-bold text-rose-950">Member Documentation of CSGO 2025</h3>
+                        <p class="text-zinc-600 italic border-r-2 border-rose-200 pr-3 text-[13px] text-right">"Create visually appealing content (photos/videos) for event documentation purposes."</p>
+                        <ul class="space-y-1 flex flex-col items-end w-full">
+                            <li class="flex flex-row-reverse items-start gap-2 text-[13px] text-zinc-500 text-right"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Supporting the smooth documentation process throughout the CSGO event series.</p></li>
+                            <li class="flex flex-row-reverse items-start gap-2 text-[13px] text-zinc-500 text-right"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Organize and maintain visual archives for long-term needs.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item flex flex-col lg:flex-row items-center gap-8 group">
+                    <div class="w-full lg:w-[35%]">
+                        <div class="relative w-full aspect-video overflow-hidden rounded-2xl shadow-lg border-2 border-white ring-1 ring-rose-100">
+                            <img src="img/event5.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[65%] space-y-2">
+                        <h4 class="text-[9px] font-black text-primary uppercase tracking-[0.2em]">November 2024 - February 2025</h4>
+                        <h3 class="font-serif-heading text-xl md:text-2xl font-bold text-rose-950">Member Fund Raising of EXPORA 2025</h3>
+                        <p class="text-zinc-600 italic border-l-2 border-rose-200 pl-3 text-[13px]">"Supporting increased project revenue through effective fundraising strategies."</p>
+                        <ul class="space-y-1 text-[13px] text-zinc-500">
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Contribute to fundraising by opening purchase orders for F&B products.</p></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Successfully reached 100% of the funding target melalui open orders.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item flex flex-col lg:flex-row-reverse items-center gap-8 group">
+                    <div class="w-full lg:w-[35%]">
+                        <div class="relative w-full aspect-video overflow-hidden rounded-2xl shadow-lg border-2 border-white ring-1 ring-rose-100">
+                            <img src="img/event6.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[65%] space-y-2 lg:text-right flex flex-col lg:items-end">
+                        <h4 class="text-[9px] font-black text-primary uppercase tracking-[0.2em]">November 2024 - September 2025</h4>
+                        <h3 class="font-serif-heading text-xl md:text-2xl font-bold text-rose-950">PIC Event Organizer of Company Visit 2025</h3>
+                        <p class="text-zinc-600 italic border-r-2 border-rose-200 pr-3 text-[13px] text-right">"Designing a well-thought-out company visit from start to finish."</p>
+                        <ul class="space-y-1 flex flex-col items-end w-full">
+                            <li class="flex flex-row-reverse items-start gap-2 text-[13px] text-zinc-500 text-right"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Determining tagline, color palette, and concept for over 40+ students.</p></li>
+                            <li class="flex flex-row-reverse items-start gap-2 text-[13px] text-zinc-500 text-right"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Creating a detailed itinerary to ensure the visit runs smoothly.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item flex flex-col lg:flex-row items-center gap-8 group">
+                    <div class="w-full lg:w-[35%]">
+                        <div class="relative w-full aspect-video overflow-hidden rounded-2xl shadow-lg border-2 border-white ring-1 ring-rose-100">
+                            <img src="img/shutter.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[65%] space-y-2">
+                        <h4 class="text-[9px] font-black text-primary uppercase tracking-[0.2em]">September 2024 - Now</h4>
+                        <h3 class="font-serif-heading text-xl md:text-2xl font-bold text-rose-950">Member of Shutter Photography</h3>
+                        <p class="text-zinc-600 italic border-l-2 border-rose-200 pl-3 text-[13px]">"Developing skills in photography and videography through participation."</p>
+                        <ul class="space-y-1 text-[13px] text-zinc-500">
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Learn shooting techniques and visual composition.</p></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Hone skills in producing visuals that are aesthetically pleasing.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item flex flex-col lg:flex-row-reverse items-center gap-8 group">
+                    <div class="w-full lg:w-[35%]">
+                        <div class="relative w-full aspect-video overflow-hidden rounded-2xl shadow-lg border-2 border-white ring-1 ring-rose-100">
+                            <img src="img/rm2.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[65%] space-y-2 lg:text-right flex flex-col lg:items-end">
+                        <h4 class="text-[9px] font-black text-primary uppercase tracking-[0.2em]">Oktober 2024 - September 2025</h4>
+                        <h3 class="font-serif-heading text-xl md:text-2xl font-bold text-rose-950">Member Relation Management of PUMA IS</h3>
+                        <p class="text-zinc-600 italic border-r-2 border-rose-200 pr-3 text-[13px] text-right">"Play a role in maintaining good relationships through active communication."</p>
+                        <ul class="space-y-1 flex flex-col items-end w-full">
+                            <li class="flex flex-row-reverse items-start gap-2 text-[13px] text-zinc-500 text-right"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Helps maintain member engagement and satisfaction.</p></li>
+                            <li class="flex flex-row-reverse items-start gap-2 text-[13px] text-zinc-500 text-right"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Ensure that members' needs and challenges are properly addressed.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item flex flex-col lg:flex-row items-center gap-8 group">
+                    <div class="w-full lg:w-[35%]">
+                        <div class="relative w-full aspect-video overflow-hidden rounded-2xl shadow-lg border-2 border-white ring-1 ring-rose-100">
+                            <img src="img/itclub.jpg" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-[65%] space-y-2">
+                        <h4 class="text-[9px] font-black text-primary uppercase tracking-[0.2em]">October 2022 - March 2023</h4>
+                        <h3 class="font-serif-heading text-xl md:text-2xl font-bold text-rose-950">Chairperson of IT CLUB</h3>
+                        <p class="text-zinc-600 italic border-l-2 border-rose-200 pl-3 text-[13px]">"Design IT-related programs such as workshops and competitions."</p>
+                        <ul class="space-y-1 text-[13px] text-zinc-500">
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Set short- and long-term goals for club development.</p></li>
+                            <li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span> <p>Manage equipment and software required for club projects.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
 
-    <footer class="w-full py-12 px-8 bg-[#fff0f3] border-t border-rose-100 mt-8">
+    <footer class="w-full py-12 px-8 bg-[#fff0f3] border-t border-rose-100 mt-12">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 text-center md:text-left">
             
             <div class="font-serif italic text-2xl text-rose-900 font-bold">
@@ -163,7 +354,7 @@
                     </div>
                 </a>
 
-                <a href="https://linkedin.com/in/nabilaamanda" target="_blank" class="flex items-center gap-3 group">
+                <a href="https://linkedin.com/in/nabilaamanda8" target="_blank" class="flex items-center gap-3 group">
                     <span class="material-symbols-outlined text-primary text-2xl">work</span>
                     <div class="text-left">
                         <p class="text-[10px] font-black text-zinc-400 uppercase leading-none mb-1">LinkedIn</p>
