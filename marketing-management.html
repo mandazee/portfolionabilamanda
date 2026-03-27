@@ -6,6 +6,7 @@
     <title>Marketing Management | Nabila Amanda</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;0,800;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     
     <script id="tailwind-config">
         tailwind.config = {
@@ -23,71 +24,73 @@
     <style>
         body { font-family: 'Be Vietnam Pro', sans-serif; scroll-behavior: smooth; }
         .font-serif-heading { font-family: 'Noto Serif', serif; }
-        .ppt-frame { transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
-        .ppt-frame:hover { transform: translateY(-15px) scale(1.02); }
+        .ppt-frame { transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+        .ppt-frame:hover { transform: translateY(-10px); }
     </style>
 </head>
 
 <body class="bg-surface text-[#1b1b1c]">
 
-    <header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-between items-center px-8 md:px-12 py-6 border-b border-rose-100/10">
-        <div class="font-serif italic text-2xl text-rose-900 font-bold">Portfolio</div>
-        <nav class="hidden md:flex gap-10 uppercase tracking-widest text-[11px] text-zinc-500 font-bold">
+    <header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-between items-center px-8 md:px-12 py-4 border-b border-rose-100/10">
+        <div class="font-serif italic text-xl text-rose-900 font-bold">Portfolio</div>
+        <nav class="hidden md:flex gap-10 uppercase tracking-widest text-[10px] text-zinc-500 font-bold">
             <a href="index.html" class="hover:text-primary transition-colors">HOME</a>
             <a href="all-work.html" class="text-primary border-b-2 border-primary pb-1">ALL WORK</a>
             <a href="about.html" class="hover:text-primary transition-colors">ABOUT</a>
             <a href="resume.html" class="hover:text-primary transition-colors">RESUME</a>
         </nav>
-        <a href="mailto:nabilaamanda3306@gmail.com" class="bg-primary text-white px-6 py-2 rounded-full uppercase tracking-widest text-[11px] font-bold hover:opacity-90">CONTACT</a>
+        <a href="contact.html" class="bg-primary text-white px-6 py-2 rounded-full uppercase tracking-widest text-[10px] font-bold hover:opacity-90 transition-opacity">CONTACT</a>
     </header>
 
-    <main class="pt-40 pb-24 px-8 md:px-12">
+    <main class="pt-32 pb-16 px-8 md:px-12">
         <div class="max-w-6xl mx-auto">
             
-            <div class="mb-24">
-                <span class="uppercase tracking-[0.4em] text-[10px] text-primary font-extrabold">Field of Expertise</span>
-                <h1 class="font-serif-heading text-6xl md:text-8xl font-bold text-rose-950 mt-4 leading-[0.9]">
+            <div class="mb-16">
+                <nav class="flex items-center gap-2 mb-6 uppercase tracking-[0.2em] text-[9px] font-black text-zinc-400">
+                    <a href="all-work.html" class="hover:text-primary transition-colors">All Work</a>
+                    <span class="material-symbols-outlined text-[12px]">chevron_right</span>
+                    <span class="text-primary">Marketing Management</span>
+                </nav>
+                <h1 class="font-serif-heading text-5xl md:text-6xl font-bold text-rose-950 leading-tight">
                     Marketing <br>
-                    <span class="text-primary italic font-black">Management</span>
+                    <span class="text-primary italic font-black">Management.</span>
                 </h1>
-                <p class="text-zinc-500 mt-10 max-w-2xl text-lg font-light leading-relaxed">
+                <p class="text-zinc-500 mt-6 max-w-xl text-base font-light leading-relaxed">
                     Analyzing market trends, brand positioning, and consumer behavior to build integrated strategies that drive growth and digital presence.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                 
                 <a href="link project/Analysis Integrated Marketing Plan of JNE (1).pdf" target="_blank" class="ppt-frame group block">
-                    <div class="relative aspect-video rounded-[2.5rem] overflow-hidden bg-white shadow-2xl border-[12px] border-white ring-1 ring-rose-100">
+                    <div class="relative aspect-video rounded-[2rem] overflow-hidden bg-white shadow-xl border-[8px] border-white ring-1 ring-rose-100">
                         <img src="img/Analysis Integrated Marketing Plan of JNE.png" class="w-full h-full object-cover">
-                        
                         <div class="absolute inset-0 bg-rose-950/80 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center p-8 transition-opacity duration-500">
-                            <p class="text-white/60 text-[10px] uppercase tracking-[0.4em] mb-2">View Project</p>
-                            <h3 class="font-serif-heading text-2xl text-white font-bold italic">Open PDF Document</h3>
-                            <div class="mt-6 w-10 h-10 border border-white/20 rounded-full flex items-center justify-center text-white">↗</div>
+                            <p class="text-white/60 text-[10px] uppercase tracking-[0.4em] mb-2 font-bold">View Project</p>
+                            <h3 class="font-serif-heading text-xl text-white font-bold italic">Open PDF Document</h3>
+                            <div class="mt-4 w-10 h-10 border border-white/20 rounded-full flex items-center justify-center text-white">↗</div>
                         </div>
                     </div>
-                    <div class="mt-8 px-2">
+                    <div class="mt-6 px-2">
                         <span class="text-[10px] font-black text-primary uppercase tracking-[0.2em]">Strategy Archive</span>
-                        <h4 class="font-serif-heading text-2xl font-bold text-rose-950 mt-2">Integrated Marketing Plan of JNE</h4>
-                        <div class="w-12 h-[2px] bg-rose-100 mt-4"></div>
+                        <h4 class="font-serif-heading text-xl font-bold text-rose-950 mt-1 group-hover:text-primary transition-colors">Integrated Marketing Plan of JNE</h4>
+                        <div class="w-10 h-[2px] bg-rose-200 mt-3 group-hover:w-20 transition-all duration-500"></div>
                     </div>
                 </a>
 
                 <a href="link project/Portfolio Project Brand & Creative Strategy of THIS IS APRIL.pdf" target="_blank" class="ppt-frame group block">
-                    <div class="relative aspect-video rounded-[2.5rem] overflow-hidden bg-white shadow-2xl border-[12px] border-white ring-1 ring-rose-100">
+                    <div class="relative aspect-video rounded-[2rem] overflow-hidden bg-white shadow-xl border-[8px] border-white ring-1 ring-rose-100">
                         <img src="img/Portfolio Project Brand & Creative Strategy of THIS IS APRIL.png" class="w-full h-full object-cover">
-                        
                         <div class="absolute inset-0 bg-rose-950/80 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center p-8 transition-opacity duration-500">
-                            <p class="text-white/60 text-[10px] uppercase tracking-[0.4em] mb-2">View Project</p>
-                            <h3 class="font-serif-heading text-2xl text-white font-bold italic">Open PDF Document</h3>
-                            <div class="mt-6 w-10 h-10 border border-white/20 rounded-full flex items-center justify-center text-white">↗</div>
+                            <p class="text-white/60 text-[10px] uppercase tracking-[0.4em] mb-2 font-bold">View Project</p>
+                            <h3 class="font-serif-heading text-xl text-white font-bold italic">Open PDF Document</h3>
+                            <div class="mt-4 w-10 h-10 border border-white/20 rounded-full flex items-center justify-center text-white">↗</div>
                         </div>
                     </div>
-                    <div class="mt-8 px-2">
+                    <div class="mt-6 px-2">
                         <span class="text-[10px] font-black text-primary uppercase tracking-[0.2em]">Creative Strategy</span>
-                        <h4 class="font-serif-heading text-2xl font-bold text-rose-950 mt-2">Brand & Creative Strategy of THIS IS APRIL</h4>
-                        <div class="w-12 h-[2px] bg-rose-100 mt-4"></div>
+                        <h4 class="font-serif-heading text-xl font-bold text-rose-950 mt-1 group-hover:text-primary transition-colors">Brand & Creative Strategy of THIS IS APRIL</h4>
+                        <div class="w-10 h-[2px] bg-rose-200 mt-3 group-hover:w-20 transition-all duration-500"></div>
                     </div>
                 </a>
 
@@ -95,12 +98,33 @@
         </div>
     </main>
 
-    <footer class="w-full py-16 px-8 bg-[#fff0f3] flex flex-col md:flex-row justify-between items-center gap-8 border-t border-rose-100 mt-32">
-        <div class="font-serif italic text-2xl text-rose-900 font-bold">The Editorial Muse</div>
-        <div class="text-[10px] text-zinc-400 font-medium tracking-widest uppercase">© 2026 NABILA AMANDA. BASED IN CIKARANG.</div>
-        <div class="flex gap-8 text-[11px] font-bold text-zinc-500 uppercase tracking-widest">
-            <a href="https://linkedin.com/in/nabilaamanda8" class="hover:text-primary transition-colors">LinkedIn</a>
-            <a href="mailto:nabilaamanda3306@gmail.com" class="hover:text-primary transition-colors">Email</a>
+    <footer class="no-print w-full py-12 px-8 bg-[#fff0f3] border-t border-rose-100 mt-20 text-center md:text-left">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+            <div class="font-serif italic text-2xl text-rose-900 font-bold">Contact Me</div>
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-6">
+                <a href="mailto:nabilaamanda3306@gmail.com" class="flex items-center gap-3 group">
+                    <span class="material-symbols-outlined text-primary text-2xl">mail</span>
+                    <div class="text-left hidden sm:block">
+                        <p class="text-[9px] font-black text-zinc-400 uppercase leading-none mb-1">Email</p>
+                        <p class="text-[12px] font-bold text-rose-950 group-hover:text-primary transition-colors">nabilaamanda3306@gmail.com</p>
+                    </div>
+                </a>
+                <a href="https://wa.me/6285880810406" target="_blank" class="flex items-center gap-3 group">
+                    <span class="material-symbols-outlined text-primary text-2xl">chat</span>
+                    <div class="text-left hidden sm:block">
+                        <p class="text-[9px] font-black text-zinc-400 uppercase leading-none mb-1">WhatsApp</p>
+                        <p class="text-[12px] font-bold text-rose-950 group-hover:text-primary transition-colors">+62 858 8081 0406</p>
+                    </div>
+                </a>
+                <a href="https://linkedin.com/in/nabilaamanda8" target="_blank" class="flex items-center gap-3 group">
+                    <span class="material-symbols-outlined text-primary text-2xl">work</span>
+                    <div class="text-left hidden sm:block">
+                        <p class="text-[9px] font-black text-zinc-400 uppercase leading-none mb-1">LinkedIn</p>
+                        <p class="text-[12px] font-bold text-rose-950 group-hover:text-primary transition-colors">Nabila Amanda</p>
+                    </div>
+                </a>
+            </div>
+            <div class="text-[10px] text-zinc-400 font-bold tracking-[0.3em] uppercase">© 2026 NABILA AMANDA.</div>
         </div>
     </footer>
 
