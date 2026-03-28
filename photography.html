@@ -39,104 +39,69 @@
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .photo-item:hover {
-            transform: scale(1.02);
+            transform: translateY(-8px);
             filter: saturate(1.1);
         }
         .photo-item img {
             width: 100%;
-            height: auto; /* Ini kuncinya biar bingkai ngikutin foto */
+            height: auto;
             display: block;
-            border-radius: 1.5rem;
+            border-radius: 2rem;
         }
     </style>
 </head>
 
 <body class="bg-surface text-[#1b1b1c]">
 
-    <header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-between items-center px-8 md:px-12 py-6 border-b border-rose-100/20">
-        <div class="font-serif italic text-2xl text-rose-900 font-bold">Portfolio</div>
-        <nav class="hidden md:flex gap-10 uppercase tracking-widest text-[11px] text-zinc-500 font-bold">
+    <header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-between items-center px-8 md:px-12 py-4 border-b border-rose-100/10">
+        <div class="font-serif italic text-xl text-rose-900 font-bold">Portfolio</div>
+        <nav class="hidden md:flex gap-10 uppercase tracking-widest text-[10px] text-zinc-500 font-bold">
             <a href="index.html" class="hover:text-primary transition-colors">HOME</a>
             <a href="all-work.html" class="text-primary border-b-2 border-primary pb-1">ALL WORK</a>
             <a href="about.html" class="hover:text-primary transition-colors">ABOUT</a>
             <a href="resume.html" class="hover:text-primary transition-colors">RESUME</a>
         </nav>
-        <button class="bg-primary text-white px-6 py-2 rounded-full uppercase tracking-widest text-[11px] font-bold">CONTACT</button>
+        <a href="contact.html" class="bg-primary text-white px-6 py-2 rounded-full uppercase tracking-widest text-[10px] font-bold hover:opacity-90 transition-opacity">CONTACT</a>
     </header>
 
-    <main>
-        <section class="pt-48 pb-16 px-8 md:px-12 bg-gradient-to-b from-[#fff0f3] to-surface">
-            <div class="max-w-7xl mx-auto text-center">
-                <nav class="flex justify-center items-center gap-2 mb-8 uppercase tracking-[0.2em] text-[10px] font-bold text-zinc-400">
+    <main class="pt-32 pb-16 px-8 md:px-12">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="mb-16">
+                <nav class="flex items-center gap-2 mb-6 uppercase tracking-[0.2em] text-[9px] font-black text-zinc-400">
                     <a href="all-work.html" class="hover:text-primary transition-colors">All Work</a>
-                    <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+                    <span class="material-symbols-outlined text-[12px]">chevron_right</span>
                     <span class="text-primary">Photography</span>
                 </nav>
-
-                <h1 class="font-serif-heading text-6xl md:text-8xl font-extrabold leading-tight text-rose-950">
-                    Content<br><span class="italic text-primary">Photography.</span>
+                <h1 class="font-serif-heading text-5xl md:text-6xl font-bold text-rose-950 leading-tight">
+                    Visual <br>
+                    <span class="text-primary italic font-black">Stories.</span>
                 </h1>
-                <p class="text-lg text-zinc-500 max-w-xl mx-auto mt-8 leading-relaxed">
-                    Capturing moments through the lens with an ambient and serene aesthetic.
+                <p class="text-zinc-500 mt-6 max-w-xl text-base font-light leading-relaxed">
+                    Capturing moments through the lens with a calm, ambient aesthetic. Focuses on storytelling through light, shadow, and quiet compositions.
                 </p>
             </div>
-        </section>
 
-        <section class="px-8 md:px-12 py-12 max-w-7xl mx-auto">
             <div class="masonry-grid">
-                
-                <div class="photo-item shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1000" alt="Work 1">
-                </div>
-                <div class="photo-item shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?q=80&w=800" alt="Work 2">
-                </div>
-                <div class="photo-item shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=1200" alt="Work 3">
-                </div>
-                <div class="photo-item shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1554080353-a576cf803bda?q=80&w=900" alt="Work 4">
-                </div>
-                <div class="photo-item shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=1100" alt="Work 5">
-                </div>
-                <div class="photo-item shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1300" alt="Work 6">
-                </div>
-                <div class="photo-item shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553?q=80&w=800" alt="Work 7">
-                </div>
-                <div class="photo-item shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1000" alt="Work 8">
-                </div>
-                <div class="photo-item shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=900" alt="Work 9">
-                </div>
-                <div class="photo-item shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1100" alt="Work 10">
-                </div>
-                <div class="photo-item shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200" alt="Work 11">
-                </div>
-                <div class="photo-item shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=900" alt="Work 12">
-                </div>
-                <div class="photo-item shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1000" alt="Work 13">
-                </div>
-                <div class="photo-item shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1433086566711-9236d893f15d?q=80&w=1100" alt="Work 14">
-                </div>
-                <div class="photo-item shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?q=80&w=1200" alt="Work 15">
-                </div>
-
+                <div class="photo-item shadow-sm"><img src="img/photo1.jpg" alt="Work 1"></div>
+                <div class="photo-item shadow-sm"><img src="img/photo2.jpg" alt="Work 2"></div>
+                <div class="photo-item shadow-sm"><img src="img/photo3.jpg" alt="Work 3"></div>
+                <div class="photo-item shadow-sm"><img src="img/photo4.jpg" alt="Work 4"></div>
+                <div class="photo-item shadow-sm"><img src="img/photo5.jpg" alt="Work 5"></div>
+                <div class="photo-item shadow-sm"><img src="img/photo6.jpg" alt="Work 6"></div>
+                <div class="photo-item shadow-sm"><img src="img/photo7.jpg" alt="Work 7"></div>
+                <div class="photo-item shadow-sm"><img src="img/photo8.jpg" alt="Work 8"></div>
+                <div class="photo-item shadow-sm"><img src="img/photo9.jpg" alt="Work 9"></div>
+                <div class="photo-item shadow-sm"><img src="img/photo10.jpg" alt="Work 10"></div>
+                <div class="photo-item shadow-sm"><img src="img/photo11.jpg" alt="Work 11"></div>
+                <div class="photo-item shadow-sm"><img src="img/photo12.jpg" alt="Work 12"></div>
+                <div class="photo-item shadow-sm"><img src="img/photo13.jpg" alt="Work 12"></div>
             </div>
-        </section>
+        </div>
     </main>
 
-    <footer class="no-print w-full py-12 px-8 bg-[#fff0f3] border-t border-rose-100 mt-20 text-center md:text-left">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+    <footer class="w-full py-12 px-8 bg-[#fff0f3] border-t border-rose-100 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 text-center md:text-left">
             <div class="font-serif italic text-2xl text-rose-900 font-bold">Contact Me</div>
             <div class="flex flex-wrap justify-center gap-x-8 gap-y-6">
                 <a href="mailto:nabilaamanda3306@gmail.com" class="flex items-center gap-3 group">
@@ -155,9 +120,9 @@
                 </a>
                 <a href="https://linkedin.com/in/nabilaamanda8" target="_blank" class="flex items-center gap-3 group">
                     <span class="material-symbols-outlined text-primary text-2xl">work</span>
-                    <div class="text-left hidden sm:block">
-                        <p class="text-[9px] font-black text-zinc-400 uppercase leading-none mb-1">LinkedIn</p>
-                        <p class="text-[12px] font-bold text-rose-950 group-hover:text-primary transition-colors">Nabila Amanda</p>
+                    <div class="text-left">
+                        <p class="text-[10px] font-black text-zinc-400 uppercase leading-none mb-1">LinkedIn</p>
+                        <p class="text-[13px] font-bold text-rose-950 group-hover:text-primary transition-colors">Nabila Amanda</p>
                     </div>
                 </a>
                 <a href="https://instagram.com/mandazee_" target="_blank" class="flex items-center gap-3 group">
